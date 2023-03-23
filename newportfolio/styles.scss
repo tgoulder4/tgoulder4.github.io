@@ -7,6 +7,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none; /*not working for some reason*/
 }
 html {
   display: flex;
@@ -59,6 +61,8 @@ html {
         height: calc(100% + var(--navHeight));
         position: relative;
         top: calc(-1 * var(--navHeight));
+        z-index: 2;
+        mix-blend-mode: difference;
         background-blend-mode: difference;
       }
     }
@@ -104,11 +108,32 @@ html {
 nav {
   height: var(--navHeight);
   background-color: #1a1a1a;
+  color: #1a1a1a;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
   left: 0;
   width: 100vw;
   z-index: 0;
+  ul {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    width: 93%;
+    list-style-type: none;
+    color: white;
+    .moveLeft {
+      margin-right: 25px;
+    }
+    li {
+      a {
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }
 }
 /*main gets display flex. push center shapeshift outwards*/
 #block {
