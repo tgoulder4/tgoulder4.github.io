@@ -22,7 +22,7 @@
               <div class="line hLine"></div>
             </div>
             <!--Holds the 3 lines for the larger column on the left/right-->
-            <div class="tallVLine"></div>
+            <div class="vLine line tallVLine"></div>
             <!--color: difference-->
             <div class="smAccCont">
               <div class="line hLine"></div>
@@ -30,7 +30,7 @@
               <div class="line hLine"></div>
             </div>
             <!--Holds the 3 lines for the smaller column on the left/right-->
-            <div class="line vLine shortVLine"></div>
+            <div class="line vLine"></div>
           </div>
           <div id="center" class="partHeight">
             <!--flex downwards-->
@@ -57,14 +57,14 @@
           <div class="accordion partHeight" id="accordionRight">
 
             
-            <div class="line vLine shortVLine"></div>
+            <div class="line vLine"></div>
             <div class="smAccCont">
               <!--Holds the 3 lines for the smaller column on the left/right-->
               <div class="line hLine"></div>
               <div class="line hLine"></div>
               <div class="line hLine"></div>
             </div>
-            <div class="tallVLine"></div>
+            <div class="vLine line tallVLine"></div>
             <!--color: difference-->
             
             <div class="lgAccCont partHeight">
@@ -80,8 +80,20 @@
           <!--covers have the highest z-index, and always cover viewport height until reveal. disable scroll while covered-->
         </div>
       </div>
-      <nav></nav>
+      <nav>
+        <div class="navContainer">
+          <ul>
+            <li>
+              Contact
+            </li>
+            <li>About</li>
+          </ul>
+        </div>
+      </nav>
+      
     </header>
-    <main></main>
+    <main>
+      <div id="block"></div>
+    </main>
   </body>
 </html>
