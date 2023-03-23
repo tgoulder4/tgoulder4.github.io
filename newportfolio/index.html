@@ -13,10 +13,10 @@
         <!--auto layout, 'sliding' across rails. width is screen width + 2* size of width of 1 cover. (0.5vw). center by display:flex justify-content: center on html-->
         <div class="cover" id="coverLeft"></div>
         <!--covers have the highest z-index, and always cover viewport height until reveal. disable scroll while covered-->
-        <div id="mainReveal">
+          <div id="mainReveal">
           <!--width goes from zero to vw upon animation-->
-          <div class="accordion" id="accordionLeft">
-            <div class="lgAccCont">
+          <div class="accordion partHeight" id="accordionLeft">
+            <div class="lgAccCont partHeight">
               <div class="line hLine"></div>
               <div class="line hLine"></div>
               <div class="line hLine"></div>
@@ -32,29 +32,29 @@
             <!--Holds the 3 lines for the smaller column on the left/right-->
             <div class="line shortVLine"></div>
           </div>
-          <div id="center">
+          <div id="center" class="partHeight">
             <!--flex downwards-->
-            <div id="topAccordion">
+            <div class="centerAccordion">
               <!--flex downwards-->
-              <div class="HLine"></div>
-              <div class="centAccContTop"> <!--used to keep the lines centered always-->
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+              <div class="line hLine"></div>
+              <div class="centAccCont"> <!--used to keep the lines centered always-->
+                <div class="line vLine"></div>
+                <div class="line vLine"></div>
+                <div class="line vLine"></div>
               </div>
             </div>
             <div id="shapeShift">
               <!--shapeshift group-->
             </div>
-            <div id="bottomAccordion">
+            <div class="centerAccordion">
               <!--flex downwards-->
-              <div class="centAccContBottom"> <!--used to keep the line centered always-->
-                <div class="line"></div>
+              <div class="centAccCont"> <!--used to keep the line centered always-->
+                <div class="line vLine"></div>
               </div>
-              <div class="Hline"></div>
+              <div class="line hLine"></div>
             </div>
           </div>
-          <div class="accordion" id="accordionRight">
+          <div class="accordion partHeight" id="accordionRight">
 
             
             <div class="line shortVLine"></div>
@@ -67,7 +67,7 @@
             <div class="line tallVLine"></div>
             <!--color: difference-->
             
-            <div class="lgAccCont">
+            <div class="lgAccCont partHeight">
               <div class="line hLine"></div>
               <div class="line hLine"></div>
               <div class="line hLine"></div>
@@ -75,6 +75,7 @@
             <!--Holds the 3 lines for the larger column on the left/right-->
           </div>
           </div>
+
           <div class="cover" id="coverRight"></div>
           <!--covers have the highest z-index, and always cover viewport height until reveal. disable scroll while covered-->
         </div>
