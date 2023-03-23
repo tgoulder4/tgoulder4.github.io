@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tye Goulder</title>
+  </head>
+  <body>
+    <header>
+      <div id="rails">
+        <!--auto layout, 'sliding' across rails. width is screen width + 2* size of width of 1 cover. (0.5vw). center by display:flex justify-content: center on html-->
+        <div class="cover" id="coverLeft"></div>
+        <!--covers have the highest z-index, and always cover viewport height until reveal. disable scroll while covered-->
+        <div id="mainReveal">
+          <!--width goes from zero to vw upon animation-->
+          <div class="accordion" id="accordionLeft">
+            <div class="lgAccCont">
+              <div class="line hLine"></div>
+              <div class="line hLine"></div>
+              <div class="line hLine"></div>
+            </div>
+            <!--Holds the 3 lines for the larger column on the left/right-->
+            <div class="line tallVLine"></div>
+            <!--color: difference-->
+            <div class="smAccCont">
+              <div class="line hLine"></div>
+              <div class="line hLine"></div>
+              <div class="line hLine"></div>
+            </div>
+            <!--Holds the 3 lines for the smaller column on the left/right-->
+            <div class="line shortVLine"></div>
+          </div>
+          <div id="center">
+            <!--flex downwards-->
+            <div id="topAccordion">
+              <!--flex downwards-->
+              <div class="HLine"></div>
+              <div class="centAccContTop"> <!--used to keep the lines centered always-->
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </div>
+            <div id="shapeShift">
+              <!--shapeshift group-->
+            </div>
+            <div id="bottomAccordion">
+              <!--flex downwards-->
+              <div class="centAccContBottom"> <!--used to keep the line centered always-->
+                <div class="line"></div>
+              </div>
+              <div class="Hline"></div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionRight">
+
+            
+            <div class="line shortVLine"></div>
+            <div class="smAccCont">
+              <!--Holds the 3 lines for the smaller column on the left/right-->
+              <div class="line hLine"></div>
+              <div class="line hLine"></div>
+              <div class="line hLine"></div>
+            </div>
+            <div class="line tallVLine"></div>
+            <!--color: difference-->
+            
+            <div class="lgAccCont">
+              <div class="line hLine"></div>
+              <div class="line hLine"></div>
+              <div class="line hLine"></div>
+            </div>
+            <!--Holds the 3 lines for the larger column on the left/right-->
+          </div>
+          </div>
+          <div class="cover" id="coverRight"></div>
+          <!--covers have the highest z-index, and always cover viewport height until reveal. disable scroll while covered-->
+        </div>
+      </div>
+      <nav></nav>
+    </header>
+    <main></main>
+  </body>
+</html>

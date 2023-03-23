@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+#rails {
+  width: 200vw;
+  height: 850px;
+  /*top = ?, align center? */
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  display: flex;
+}
+
+.cover {
+  width: 50vw;
+  background-color: #191919;
+  height: 1250px;
+}
+
+.hLine {
+  width: 100%;
+}
+
+.vLine {
+  height: 100%;
+}
+
+.line {
+  width: 2px;
+  color: #1a1a1a;
+}
+
+.mainReveal .accordionLeft .lgAccCont {
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=styles.css.map */
