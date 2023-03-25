@@ -20,7 +20,7 @@
           <div id="mainReveal">
           <!--width goes from zero to vw upon animation-->
           <div class="accordion partHeight" id="accordionLeft">
-            <div class="lgAccCont partHeight">
+            <div class="lgAccCont partHeight" id="lgAccCont">
               <div class="line hLine"></div>
               <div class="line hLine"></div>
               <div class="line hLine"></div>
@@ -71,7 +71,7 @@
             <div class="vLine line tallVLine"></div>
             <!--color: difference-->
             
-            <div class="lgAccCont partHeight">
+            <div class="lgAccCont partHeight" id="lgAccCont">
               <div class="line hLine"></div>
               <div class="line hLine"></div>
               <div class="line hLine"></div>
@@ -95,7 +95,40 @@
       
     </header>
     <main>
-      <div id="block"></div>
+      <section id="one" class="flexCenter reverse"> <!--red-->
+        <div class="green wFiller flexAlign" id="fillerOneContainer"> <!--green-->
+          <div id="fillerOne" class="black wFiller"></div>
+        </div> 
+        <div class="green contentContainer"> <!--green-->
+
+          <div class="yellow" id="topSection">
+            <div id="detailsS1" class="cyan">
+              <div class="greyBlock wFiller grey">
+                <img src="./images/iconLinkedin.svg" alt="LinkedIn">
+                <img src="./images/iconEmail.svg" alt="Email">
+                <img src="./images/iconPhone.svg" alt="Phone">
+              </div>
+            </div>
+            <div id="mainTitleContainer" class="cyan">
+              <div class="nameAndTypeOfRole">
+                <p>TYE GOULDER</p>
+                <p>|</p>
+                <p>FRONT END DEVELOPER</p>
+                <p>|</p>
+                <p>PRODUCT DESIGNER</p>
+              </div>
+              <h1><span class="highlighted">FANATICAL</span> ABOUT <div class="bold">CHALLENGE</div></h1>
+              <i>I have a passion for creating projects that stretch my abilities and drive me to grow.</i>
+            </div>
+          </div> <!--yellow-->
+          <div class="yellow black" id="centerDivider"></div>
+          <div class="yellow" id="bottomSection"></div>
+
+        </div>
+        <div class="green whFiller black" id="fillerTwo"></div> <!--green-->
+      </section>
+      <section></section>
+      <section></section>
     </main>
   </body>
 </html>
