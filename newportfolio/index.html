@@ -47,8 +47,15 @@
                 <div class="line vLine"></div>
               </div>
             </div>
-            <div id="shapeShift">
+            <div id="shapeShift-container">
               <!--shapeshift group-->
+              <div id="shapeShift">
+                <div id="topPart">
+                  <div class="block" id="leftBlock"></div>
+                  <div class="block" id="rightBlock"></div>
+                </div>
+                <div class="block" id="bottomBlock"></div>
+              </div>
             </div>
             <div class="centerAccordion">
               <!--flex downwards-->
@@ -96,12 +103,16 @@
     </header>
     <main>
       <section id="one" class="flexCenter reverse"> <!--red-->
-        <div class="green wFiller flexAlign" id="fillerOneContainer"> <!--green-->
-          <div id="fillerOne" class="black wFiller"></div>
-        </div> 
-        <div class="green contentContainer"> <!--green-->
-
-          <div class="yellow" id="topSection">
+        <div class="yellow containerS1"> <!--holds left line and filler-->
+          <div class="green leftDetails">
+            <div id="fillerCont">
+              <div id="fillerOne" class="black wFiller"></div>
+            </div>
+            
+            <div id="s1vLine" class="black wFiller vLine"></div>
+          </div>
+        <div class="green contentContainer">
+          <div id="topSection">
             <div id="detailsS1" class="cyan">
               <div class="greyBlock wFiller grey">
                 <img src="./images/iconLinkedin.svg" alt="LinkedIn">
@@ -125,7 +136,7 @@
           <div class="yellow" id="bottomSection"></div>
 
         </div>
-        <div class="green whFiller black" id="fillerTwo"></div> <!--green-->
+        </div>
       </section>
       <section></section>
       <section></section>
