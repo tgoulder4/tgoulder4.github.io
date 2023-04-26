@@ -226,7 +226,8 @@ section {
 }
 #one .containerS1 {
   display: flex;
-  gap: 6.5vw;
+  margin-left: 24px;
+  gap: 4.5vw;
   position: absolute;
   left: 10%;
 }
@@ -367,7 +368,8 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 482px;
+  height: 450px;
+  margin-top: -31px;
 }
 .contentContainer #topSection #detailsS1 .greyBlock img {
   width: 35px;
@@ -403,7 +405,7 @@ section {
   position: absolute;
   display: inline-block;
   width: 1013px;
-  height: 93px;
+  height: 129px;
   background-color: var(--grey);
   color: transparent;
   top: 42px;
@@ -415,6 +417,8 @@ section {
 }
 .contentContainer #topSection #mainTitleContainer .nameAndTypeOfRole {
   margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 4vw;
   display: flex;
   justify-content: space-between;
 }/*# sourceMappingURL=styles.css.map */
