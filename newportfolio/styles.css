@@ -226,7 +226,7 @@ section {
 }
 #one .containerS1 {
   display: flex;
-  gap: 10vw;
+  gap: 6.5vw;
   position: absolute;
   left: 10%;
 }
@@ -389,7 +389,7 @@ section {
   max-width: 500px;
 }
 .contentContainer #topSection #mainTitleContainer h1 {
-  font-size: 160px;
+  font-size: 180px;
   line-height: 159px;
   margin-top: 42px;
   margin-bottom: 42px;
