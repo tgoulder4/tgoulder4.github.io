@@ -369,7 +369,7 @@ section {
   justify-content: space-between;
   align-items: center;
   height: 450px;
-  margin-top: -31px;
+  margin-top: -25px;
 }
 .contentContainer #topSection #detailsS1 .greyBlock img {
   width: 35px;
@@ -393,7 +393,7 @@ section {
 .contentContainer #topSection #mainTitleContainer h1 {
   font-size: 180px;
   line-height: 159px;
-  margin-top: 42px;
+  margin-top: 50px;
   margin-bottom: 42px;
   color: var(--secondary_colour);
 }
