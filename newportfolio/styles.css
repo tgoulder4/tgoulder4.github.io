@@ -45,11 +45,11 @@
   gap: 0;
 }
 #rails #mainReveal #accordionLeft .vLine {
-  filter: drop-shadow(4px 0 3px #aeaeae);
+  filter: drop-shadow(4px 0 3px hsla(0, 0%, 18%, 0.292));
   flex-shrink: 0;
 }
 #rails #mainReveal #accordionRight .vLine {
-  filter: drop-shadow(-4px 0 3px #aeaeae);
+  filter: drop-shadow(-4px 0 3px hsla(0, 0%, 18%, 0.292));
   flex-shrink: 0;
 }
 #rails #mainReveal .accordion {
