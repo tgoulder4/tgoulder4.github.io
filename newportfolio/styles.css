@@ -218,6 +218,7 @@ nav ul li a {
 
 section {
   outline: 4px solid red;
+  border-bottom: 10px solid black;
 }
 
 #one {
@@ -248,10 +249,6 @@ section {
   left: -100%;
   right: 0;
   width: 100%;
-}
-#one .contentContainer #mainTitleContainer {
-  margin-top: var(--s1TopMargin);
-  margin-bottom: var(--s1TopMargin);
 }
 #one .vLine {
   height: 100%;
@@ -294,12 +291,16 @@ section {
 }
 
 .contentContainer {
-  width: 1426px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-grow: 0;
   flex-shrink: 0;
+}
+.contentContainer #mainTitleContainer {
+  margin-top: var(--s1TopMargin);
+  margin-bottom: var(--s1TopMargin);
 }
 .contentContainer #centerDivider {
   height: 74px;

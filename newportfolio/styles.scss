@@ -221,7 +221,7 @@ nav {
 }
 section {
   outline: 4px solid red;
-  border-bottom:10px solid black; //--New border change
+  border-bottom: 10px solid black; //--New border change
 }
 #one {
   height: 1347px;
@@ -252,12 +252,6 @@ section {
           width: 100%;
         }
       }
-    }
-  }
-  .contentContainer {
-    #mainTitleContainer {
-      margin-top: var(--s1TopMargin);
-      margin-bottom: var(--s1TopMargin);
     }
   }
   .vLine {
@@ -294,12 +288,16 @@ section {
 }
 
 .contentContainer {
-  width: 1426px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-grow: 0;
   flex-shrink: 0;
+  #mainTitleContainer {
+    margin-top: var(--s1TopMargin);
+    margin-bottom: var(--s1TopMargin);
+  }
   //make vline more grey.
   #centerDivider {
     height: 74px;
