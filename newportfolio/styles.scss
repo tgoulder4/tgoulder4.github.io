@@ -370,6 +370,18 @@ section {
   #bottomSection {
     display: flex;
     height: 100%;
+
+    #tblSkillSet {
+      border-collapse: separate;
+      border: 2px solid #bababa;
+      border-spacing: 80px;
+      td {
+        outline: 2px solid indigo;
+      }
+      tbody {
+        border-spacing: 0;
+      }
+    }
   }
 
   #topSection {
@@ -379,8 +391,8 @@ section {
       width: 212px;
       flex-shrink: 0;
       align-items: center;
-      border-left: 2px solid var(--secondary_colour);
-      border-right: 2px solid var(--secondary_colour);
+      border-left: 2px solid #bababa;
+      border-right: 2px solid #bababa;
       .greyBlock {
         display: flex;
         flex-direction: column;

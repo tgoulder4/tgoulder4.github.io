@@ -373,6 +373,20 @@ section {
   display: flex;
   height: 100%;
 }
+.contentContainer #topSection #tblSkillSet,
+.contentContainer #bottomSection #tblSkillSet {
+  border-collapse: separate;
+  border: 2px solid #bababa;
+  border-spacing: 80px;
+}
+.contentContainer #topSection #tblSkillSet td,
+.contentContainer #bottomSection #tblSkillSet td {
+  outline: 2px solid indigo;
+}
+.contentContainer #topSection #tblSkillSet tbody,
+.contentContainer #bottomSection #tblSkillSet tbody {
+  border-spacing: 0;
+}
 .contentContainer #topSection {
   display: flex;
   gap: 97px;
@@ -381,8 +395,8 @@ section {
   width: 212px;
   flex-shrink: 0;
   align-items: center;
-  border-left: 2px solid var(--secondary_colour);
-  border-right: 2px solid var(--secondary_colour);
+  border-left: 2px solid #bababa;
+  border-right: 2px solid #bababa;
 }
 .contentContainer #topSection #detailsS1 .greyBlock {
   display: flex;
