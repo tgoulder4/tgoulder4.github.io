@@ -387,6 +387,7 @@ section {
   #topSection {
     display: flex;
     gap: 97px;
+    margin-top: var(--s1TopMargin);
     #detailsS1 {
       width: 212px;
       flex-shrink: 0;

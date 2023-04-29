@@ -390,6 +390,7 @@ section {
 .contentContainer #topSection {
   display: flex;
   gap: 97px;
+  margin-top: var(--s1TopMargin);
 }
 .contentContainer #topSection #detailsS1 {
   width: 212px;
