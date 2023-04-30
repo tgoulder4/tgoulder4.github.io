@@ -19,6 +19,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.absolute {
+  position: absolute;
+}
+
 @media (max-width: 1340px) {
   #topSection {
     flex-direction: column;
