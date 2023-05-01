@@ -23,6 +23,26 @@
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
+.flexItemsCenter {
+  display: flex;
+  justify-items: center;
+}
+
+.flexAlignItemsCenter {
+  display: flex;
+  align-items: center;
+}
+
+.flexDownAlignItemsCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (max-width: 1340px) {
   #topSection {
     flex-direction: column;
