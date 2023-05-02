@@ -43,6 +43,16 @@
   align-items: center;
 }
 
+.flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexLeftRight {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (max-width: 1340px) {
   #topSection {
     flex-direction: column;
