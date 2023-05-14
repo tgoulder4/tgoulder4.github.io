@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <div id="rails" class="" style="height: 50vh">
+      <div id="rails" class="">
         <!--auto layout, 'sliding' across rails. width is screen width + 2* size of width of 1 cover. (0.5vw). center by display:flex justify-content: center on html-->
         <div class="cover" id="coverLeft"></div>
         <!--covers have the highest z-index, and always cover viewport height until reveal. disable scroll while covered-->
@@ -39,7 +39,7 @@
           </div>
           <div id="center" class="partHeight">
             <!--flex downwards-->
-            <div class="centerAccordion">
+            <div class="centerAccordion mt-6per">
               <!--flex downwards-->
               <div class="line hLine"></div>
               <div class="centAccCont"> <!--used to keep the lines centered always-->
@@ -48,7 +48,7 @@
                 <div class="line vLine"></div>
               </div>
             </div>
-            <div id="shapeShift-container" class="h-100">
+            <div id="shapeShift-container" class="h-75">
               <!--shapeshift group-->
               <div id="shapeShift" class="h-100">
                 <div id="topPart">
@@ -58,7 +58,7 @@
                 <div class="block" id="bottomBlock"></div>
               </div>
             </div>
-            <div class="centerAccordion">
+            <div class="centerAccordion mb-6per">
               <!--flex downwards-->
               <div class="centAccCont"> <!--used to keep the line centered always-->
                 <div class="line vLine"></div>
