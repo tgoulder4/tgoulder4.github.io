@@ -29,26 +29,26 @@
             <!--Holds the 3 lines for the larger column on the left/right-->
             <div class="vLine line tallVLine"></div>
             <!--color: difference-->
-            <div class="smAccCont">
+            <div class="smAccCont d-none d-sm-flex">
               <div class="line hLine"></div>
               <div class="line hLine"></div>
               <div class="line hLine"></div>
             </div>
             <!--Holds the 3 lines for the smaller column on the left/right-->
-            <div class="line vLine"></div>
+            <div class="line vLine d-none d-sm-flex"></div>
           </div>
           <div id="center" class="partHeight">
             <!--flex downwards-->
-            <div class="centerAccordion mt-6per">
+            <div class="centerAccordion mt-5per">
               <!--flex downwards-->
               <div class="line hLine"></div>
               <div class="centAccCont"> <!--used to keep the lines centered always-->
+                <div class="line vLine d-none d-sm-block"></div>
                 <div class="line vLine"></div>
-                <div class="line vLine"></div>
-                <div class="line vLine"></div>
+                <div class="line vLine d-none d-sm-block"></div>
               </div>
             </div>
-            <div id="shapeShift-container" class="h-75">
+            <div id="shapeShift-container" class="vh-36">
               <!--shapeshift group-->
               <div id="shapeShift" class="h-100">
                 <div id="topPart">
@@ -58,7 +58,7 @@
                 <div class="block" id="bottomBlock"></div>
               </div>
             </div>
-            <div class="centerAccordion mb-6per">
+            <div class="centerAccordion mb-5per">
               <!--flex downwards-->
               <div class="centAccCont"> <!--used to keep the line centered always-->
                 <div class="line vLine"></div>
@@ -69,8 +69,8 @@
           <div class="accordion partHeight" id="accordionRight">
 
             
-            <div class="line vLine"></div>
-            <div class="smAccCont">
+            <div class="line vLine d-none d-sm-flex"></div>
+            <div class="smAccCont d-none d-sm-flex">
               <!--Holds the 3 lines for the smaller column on the left/right-->
               <div class="line hLine"></div>
               <div class="line hLine"></div>
@@ -92,8 +92,8 @@
           <!--covers have the highest z-index, and always cover viewport height until reveal. disable scroll while covered-->
         </div>
       </div>
-      <nav>
-          <ul>
+      <nav class="z-index-2 position-absolute w-100 pl-3 pr-3 h-navheight back-color-primary d-flex justify-content-center align-items-center">
+          <ul class="m-0 w-100 d-flex justify-items-center justify-content-between list-style-none">
             <li>
               <a href="#contact">CONTACT</a>
             </li>
@@ -103,31 +103,41 @@
       
     </header>
     <!--overall recreated layout-->
-    <main class="green flexItemsCenter relative">
-      <div id="middleContentContainer" class="red d-flex flex-column">
-        <div class="filler absolute goesToLeft tabPlus" id="firstFiller"></div> <!-- absolute, move this to the left and down, left 0-->
-        <section class="yellow flex-column" id="fanaticalSection">
-          <div class="leftBannerAreaIncludingLines">
-            <div class="fullHeightLeftVertGreyLine relative tabPlus"></div> <!--spans the whole height-->
-            <div class="greySocialsContainer flexDownAlignItemsCenter deskPlus">
-              <!--linkedIn icon-->
-              <!--mail icon-->
-              <!--phone icon-->
+    <main class="green d-flex justify-content-center relative">
+
+      <div id="middleContentContainer" class="red position-relative w-75 d-flex flex-column">
+
+        <div class="filler absolute goesToLeft" id="firstFiller"></div> <!-- absolute, move this to the left and down, left 0-->
+
+        <section class="yellow flex-column pl-ForDesk-0ForMob align-items-start" id="fanaticalSection">
+          <div class="cyan d-flex flex-sm-column-reverse flex-xl-row flex-xl-gap-0 align-items-xl-start gap-ForDesk-0ForMob">
+            <div class="fullHeightLeftVertGreyLine h-100 position-relative"></div> <!--spans the whole height-->
+            
+            <div class="leftBannerAreaIncludingLines purple minw-xl-w-100-h-100-minw-80px maxw-xl-h-100px-w-100 d-xl-block minw-80px maxw-150px">
+
+    
+              <div class="greySocialsContainer d-flex flex-column align-items-center deskPlus">
+                <!--linkedIn icon-->
+                <!--mail icon-->
+                <!--phone icon-->
+              </div>
             </div>
-            <div class="longLeft-RightVertGreyLine relative deskPlus"></div> <!--spans 1.5 sections-->
-          <article class="meFanaticalAndDescription cyan relative">
-            <p class="whoAndWhatIAm flexSpaceBetween tabPlus">
-              <h3>TYE GOULDER</h3>
-              <h3>|</h3>
-              <h3>FRONT-END DEVELOPER</h3>
-              <h3>|</h3>
-              <h3>PRODUCT DESIGNER</h3>
-            </p>
-            <div class="highlighted relative"></div>
-            <h1>FANATICAL ABOUT <em>CREATIVITY</em></h1>
-            <h2 class="italic">I take great pleasure into incorporating originality into my projects.</h2>
-          </article>
-        </div>
+              <div class="longLeft-RightVertGreyLine h-30px relative"></div> <!--spans 1.5 sections-->
+            <article class="meFanaticalAndDescription purple relative">
+              <p class="whoAndWhatIAm flexSpaceBetween tabPlus">
+                <h3>TYE GOULDER</h3>
+                <h3>|</h3>
+                <h3>FRONT-END DEVELOPER</h3>
+                <h3>|</h3>
+                <h3>PRODUCT DESIGNER</h3>
+              </p>
+              <div class="highlighted relative"></div>
+              <h1>FANATICAL ABOUT <em>CREATIVITY</em></h1>
+              <h2 class="italic">I take great pleasure into incorporating originality into my projects.</h2>
+            </article>
+          
+          </div>
+          </section>
         <div class="thiccDivider relative goesToRight"></div>
         <section class="yellow" id="projectSection">
         </section>

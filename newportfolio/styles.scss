@@ -1,7 +1,8 @@
 :root {
-  --mainRevealWidth: 100vw;
-  --navHeight: 83px;
-  --lineWeight: 2px;
+  --mainRevealWidth: 100%;
+  --navHeight: 50px;
+  --vlineWidth: 0.2vh;
+  --hLineHeight: 0.2vh;
   --lineColour: #191919;
   --primary_colour: #191919;
   --secondary_colour: #2f2f2f;
@@ -10,10 +11,15 @@
   --desk2Container1Width: 1031px; /*at a window width 1600*/
   --s1TopMargin: 80px;
   --vBlockWidth: 55px;
+  --largeScreen: 1200px;
 }
 @mixin margin($marginTop, $marginBottom) {
   margin-top: $marginTop;
   margin-bottom: $marginBottom;
+}
+@mixin lineShadow($rightshift, $bottomshift, $blur, $spread, $colour) {
+  box-shadow: $rightshift $bottomshift $blur $spread $colour;
+  -webkit-box-shadow: $rightshift $bottomshift $blur $spread $colour;
 }
 * {
   margin: 0;
@@ -33,11 +39,6 @@
 }
 .flexAlignItemsCenter {
   display: flex;
-  align-items: center;
-}
-.flexDownAlignItemsCenter {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 .flexSpaceBetween {
@@ -95,13 +96,13 @@
 }
 //end media queries
 #rails {
-  width: 100vw;
+  width: 100%;
   border-bottom: 15px solid var(--primary_colour);
   display: flex;
   justify-content: center;
-  margin-top: 82px;
+  margin-top: var(--navHeight);
   z-index: 1;
-  height: 57vh;
+  height: 60vh;
   .cover {
     width: 100%;
     // background-color: hsl(0 0 calc(10 + calc(calc(var(--mainRevealWidth) * 100) / 100vw))); /*hsl(0,0,10 +mainRevealWidth*100/vw*/
@@ -110,7 +111,7 @@
     z-index: 2;
   }
   #mainReveal {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -120,14 +121,12 @@
     gap: 0;
     #accordionLeft {
       .vLine {
-        filter: drop-shadow(4px 0 3px hsla(0, 0%, 18%, 0.292));
-        flex-shrink: 0;
+        @include lineShadow(9px, 0px, 15px, -4px, rgba(0, 0, 0, 0.34));
       }
     }
     #accordionRight {
       .vLine {
-        filter: drop-shadow(-4px 0 3px hsla(0, 0%, 18%, 0.292));
-        flex-shrink: 0;
+        @include lineShadow(-9px, 0px, 15px, -4px, rgba(0, 0, 0, 0.34));
       }
     }
     .accordion {
@@ -146,8 +145,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 40%;
-        padding-top: 110px;
+        gap: 45%;
         flex: 1;
       }
       .tallVLine {
@@ -167,7 +165,8 @@
       flex-direction: column;
       justify-content: center;
       .centerAccordion {
-        height: 72px;
+        height: 50px;
+        flex-shrink: 0;
         .centAccCont {
           display: flex;
           justify-content: space-around;
@@ -243,14 +242,15 @@
 }
 .hLine {
   width: 100%;
-  height: var(--lineWeight);
-  min-height: var(--lineWeight);
+  min-height: var(--hLineHeight);
+  max-height: var(--hLineHeight);
+
   flex-shrink: 0;
 }
 .vLine {
   height: 100%;
-  width: var(--lineWeight);
-  min-width: var(--lineWeight);
+  max-width: var(--vlineWidth);
+  min-width: var(--vlineWidth);
   flex-shrink: 0;
 }
 .line {
@@ -260,31 +260,33 @@
 .partHeight {
   height: 100%;
 }
+.pl-3 {
+  padding-left: 3%;
+}
+.pr-3 {
+  padding-right: 3%;
+}
+.z-index-2 {
+  z-index: 2;
+}
+.list-style-none {
+  list-style: none;
+}
+.vh-36 {
+  height: 36vh;
+}
 nav {
   height: var(--navHeight);
   background-color: var(--primary_colour);
   // color: var(--primary_colour);
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   top: 0;
   left: 0;
-  width: 100vw;
-  z-index: 2;
   ul {
-    display: flex;
-    justify-items: center;
-    justify-content: space-between;
-    width: 93%;
-    list-style-type: none;
     color: white;
-    .moveLeft {
-      margin-right: 25px;
-    }
+    margin: 0;
     li {
       a {
-        font-size: 18px;
+        font-size: 0.7rem;
         color: white;
       }
     }
@@ -366,133 +368,56 @@ section {
 .wFiller {
   width: 100%;
 }
+.purple {
+  border: 12px solid purple;
+}
+.pl-ForDesk-0ForMob {
+  @media (min-width: 768px) {
+    padding-left: 40px;
+  }
+  @media (max-width: 768px) {
+    padding-left: 0px;
+  }
+}
+.gap-ForDesk-0ForMob {
+  @media (min-width: 768px), (max-width: 1440px) {
+    gap: 40px;
+  }
+  @media (max-width: 768px) {
+    gap: 0px;
+  }
+}
+.flex-xl-gap-0 {
+  @media (min-width: 1400px) {
+    gap: 0px;
+  }
+}
+.h-30px {
+  height: 30px;
+}
+.w-250px {
+  width: 250px;
+}
+.h-500px {
+  height: 500px;
+}
 
-.contentContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 0;
-  flex-shrink: 0;
-  #mainTitleContainer {
-    margin-top: var(--s1TopMargin);
-    margin-bottom: var(--s1TopMargin);
-  }
-  //make vline more grey.
-  #centerDivider {
-    height: 74px;
-    flex-shrink: 0;
-    position: relative;
-    &::after {
-      content: ".";
-      color: transparent;
-      position: absolute;
-      background-color: var(--secondary_colour);
-      top: 0px;
-      left: calc(-1 * 100vw);
-      height: var(--lineWeight);
-      width: 100vw;
-      z-index: -1;
-    }
-    &::before {
-      content: ".";
-      color: transparent;
-      position: absolute;
-      background-color: var(--secondary_colour);
-      top: 70px;
-      left: calc(-1 * 100vw);
-      height: 2px;
-      width: 100vw;
-      z-index: -1;
-    }
-  }
-  #topSection,
-  #bottomSection {
-    display: flex;
+.minw-xl-w-100-h-100-minw-80px {
+  @media (min-width: 1200px) {
+    width: 100%;
     height: 100%;
-
-    #tblSkillSet {
-      border-collapse: separate;
-      border: 2px solid #bababa;
-      border-spacing: 80px;
-      td {
-        outline: 2px solid indigo;
-      }
-      tbody {
-        border-spacing: 0;
-      }
-    }
+    min-width: 80px;
   }
-
-  #topSection {
-    display: flex;
-    gap: 97px;
-    margin-top: var(--s1TopMargin);
-    #detailsS1 {
-      width: 212px;
-      flex-shrink: 0;
-      align-items: center;
-      border-left: 2px solid #bababa;
-      border-right: 2px solid #bababa;
-      .greyBlock {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 450px;
-        margin-top: -25px;
-        img {
-          width: 35px;
-          height: 35px;
-        }
-      }
-    }
-    #mainTitleContainer {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      i {
-        font-size: 1.3rem;
-        color: var(--secondary_colour);
-        margin-left: 3px;
-        letter-spacing: 90%;
-        max-width: 500px;
-      }
-      h1 {
-        font-size: 180px;
-        line-height: 159px;
-        margin-top: 50px;
-        margin-bottom: 42px;
-        color: var(--secondary_colour);
-
-        .highlighted {
-          position: relative;
-          &::after {
-            content: ".";
-            position: absolute;
-            display: inline-block;
-            width: 1013px;
-            height: 129px;
-            background-color: var(--grey);
-            color: transparent;
-            top: 42px;
-            left: -30px;
-            z-index: -1;
-          }
-        }
-        .bold {
-          font-weight: 800;
-        }
-      }
-      .nameAndTypeOfRole {
-        margin-left: 5px;
-        padding-left: 10px;
-        display: flex;
-        justify-content: space-between;
-      }
-    }
+}
+.maxw-xl-h-100px-w-100 {
+  @media (max-width: 1200px) {
+    height: 100px;
+    width: 100%;
   }
+}
+.minw-80px {
+  min-width: 80px;
+}
+.maxw-150px {
+  max-width: 150px;
 }
