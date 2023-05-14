@@ -98,11 +98,10 @@
 
 #rails {
   width: 100vw;
-  height: 710px;
   border-bottom: 15px solid var(--primary_colour);
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 82px;
   z-index: 1;
 }
 #rails .cover {

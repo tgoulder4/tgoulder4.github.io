@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@600;700;800&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
 <!-- bold, black extrabold: medium, bold, black avaiable-->
     <title>Tye Goulder</title>
   </head>
   <body>
     <header>
-      <div id="rails">
+      <div id="rails" class="" style="height: 50vh">
         <!--auto layout, 'sliding' across rails. width is screen width + 2* size of width of 1 cover. (0.5vw). center by display:flex justify-content: center on html-->
         <div class="cover" id="coverLeft"></div>
         <!--covers have the highest z-index, and always cover viewport height until reveal. disable scroll while covered-->
@@ -47,9 +48,9 @@
                 <div class="line vLine"></div>
               </div>
             </div>
-            <div id="shapeShift-container">
+            <div id="shapeShift-container" class="h-100">
               <!--shapeshift group-->
-              <div id="shapeShift">
+              <div id="shapeShift" class="h-100">
                 <div id="topPart">
                   <div class="block" id="leftBlock"></div>
                   <div class="block" id="rightBlock"></div>
@@ -103,9 +104,9 @@
     </header>
     <!--overall recreated layout-->
     <main class="green flexItemsCenter relative">
-      <section id="middleContentContainer" class="red flexDown ">
+      <div id="middleContentContainer" class="red d-flex flex-column">
         <div class="filler absolute goesToLeft tabPlus" id="firstFiller"></div> <!-- absolute, move this to the left and down, left 0-->
-        <section class="yellow flexLeftRight" id="fanaticalSection">
+        <section class="yellow flex-column" id="fanaticalSection">
           <div class="leftBannerAreaIncludingLines">
             <div class="fullHeightLeftVertGreyLine relative tabPlus"></div> <!--spans the whole height-->
             <div class="greySocialsContainer flexDownAlignItemsCenter deskPlus">
@@ -114,7 +115,6 @@
               <!--phone icon-->
             </div>
             <div class="longLeft-RightVertGreyLine relative deskPlus"></div> <!--spans 1.5 sections-->
-          </div>
           <article class="meFanaticalAndDescription cyan relative">
             <p class="whoAndWhatIAm flexSpaceBetween tabPlus">
               <h3>TYE GOULDER</h3>
@@ -123,11 +123,11 @@
               <h3>|</h3>
               <h3>PRODUCT DESIGNER</h3>
             </p>
-            <div class="greyHighlight relative"></div>
+            <div class="highlighted relative"></div>
             <h1>FANATICAL ABOUT <em>CREATIVITY</em></h1>
             <h2 class="italic">I take great pleasure into incorporating originality into my projects.</h2>
           </article>
-        </section>
+        </div>
         <div class="thiccDivider relative goesToRight"></div>
         <section class="yellow" id="projectSection">
         </section>
@@ -139,85 +139,7 @@
         <section class="yellow" id="contactMeSection">
           <div class="thiccDivider relative goesToLeft goesToRight"></div>
         </section>
-      </section>
-
-
-
-
-
-      <section id="one" class="flexCenter reverse"> <!--red-->
-        <div class="yellow containerS1"> <!--holds left line and filler-->
-          <div class="green leftDetails">
-            <div id="fillerCont">
-              <div id="fillerOne" class="black wFiller"></div>
-            </div>
-            
-            <div id="s1vLine" class="black wFiller vLine"></div>
-          </div>
-        <div class="green contentContainer">
-          <div id="topSection">
-            <div id="detailsS1" class="cyan">
-              <div class="greyBlock wFiller grey">
-                <img src="./images/iconLinkedin.svg" alt="LinkedIn">
-                <img src="./images/iconEmail.svg" alt="Email">
-                <img src="./images/iconPhone.svg" alt="Phone">
-              </div>
-            </div>
-            <div id="mainTitleContainer" class="cyan">
-              <div class="nameAndTypeOfRole">
-                <p>TYE GOULDER</p>
-                <p>|</p>
-                <p>FRONT END DEVELOPER</p>
-                <p>|</p>
-                <p>PRODUCT DESIGNER</p>
-              </div>
-              <h1><span class="highlighted">FANATICAL</span> ABOUT <div class="bold">CHALLENGE</div></h1>
-              <i>I have a passion for creating projects that stretch my abilities and drive me to grow.</i>
-            </div>
-          </div> <!--yellow-->
-          <div class="yellow black" id="centerDivider"></div>
-          <div class="yellow" id="bottomSection">
-            <div class="greyBlock"></div>
-            <div class="greyBlock"></div>
-            <table id="tblSkillSet">
-              <thead>
-                <tr>
-                  <td>Frontend</td>
-                  <td>Backend</td>
-                  <td>Tools</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>HTML</td>
-                  <td>-</td>
-                  <td>GIT</td>
-                </tr>
-                <tr>
-                  <td>CSS</td>
-                  <td>-</td>
-                  <td>FIGMA</td>
-                </tr>
-                <tr>
-                  <td>JAVASCRIPT</td>
-                  <td>-</td>
-                  <td>PHOTOSHOP</td>
-                </tr>
-                <tr>
-                  <td>SASS</td>
-                  <td>-</td>
-                  <td></td>
-              </tbody>
-            </table>
-            <article>
-              <h2>I am a fast learner who excels in problem solving and attention to detail, gained from studying maths, physics and computer science at straight A/A*s.
-              </h2>
-              <h2>With a keen eye for user experience, I continually refine my product design skills to create intuitive projects.</h2>
-            </article>
-          </div>
-        </div>
-        </div>
-      </section> <!---->
+      </div>
     </main>
   </body>
 </html>
