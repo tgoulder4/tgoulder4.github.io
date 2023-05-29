@@ -21,11 +21,15 @@
   box-shadow: $rightshift $bottomshift $blur $spread $colour;
   -webkit-box-shadow: $rightshift $bottomshift $blur $spread $colour;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+.noAnalysis {
+  border: none !important;
 }
 .absolute {
   position: absolute;
@@ -233,13 +237,13 @@ section {
   outline: 4px solid red;
   border-bottom: 10px solid black; //--New border change
 }
-.yellow /*id of topSection*/ {
+.analysis-Yellow /*id of topSection*/ {
   border: 12px solid yellow;
 }
-.green {
+.analysis-Green {
   border: 8px solid green;
 }
-.cyan {
+.analysis-Cyan {
   border: 12px solid cyan;
 }
 .flexCenter {
@@ -261,7 +265,7 @@ section {
 .wFiller {
   width: 100%;
 }
-.purple {
+.analysis-Purple {
   border: 12px solid purple;
 }
 .pl-ForDesk-0ForMob {
@@ -273,10 +277,10 @@ section {
   }
 }
 .margin-ForDesk-0ForMob {
-  @media (min-width: 768px), (max-width: 1440px) {
+  @media (min-width: 1200px), (max-width: 1440px) {
     margin-left: 40px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     margin-left: 0px;
   }
 }

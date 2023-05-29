@@ -21,6 +21,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.noAnalysis {
+  border: none !important;
+}
+
 .absolute {
   position: absolute;
 }
@@ -665,15 +669,15 @@ section {
   border-bottom: 10px solid black;
 }
 
-.yellow {
+.analysis-Yellow {
   border: 12px solid yellow;
 }
 
-.green {
+.analysis-Green {
   border: 8px solid green;
 }
 
-.cyan {
+.analysis-Cyan {
   border: 12px solid cyan;
 }
 
@@ -701,7 +705,7 @@ section {
   width: 100%;
 }
 
-.purple {
+.analysis-Purple {
   border: 12px solid purple;
 }
 
@@ -716,12 +720,12 @@ section {
   }
 }
 
-@media (min-width: 768px), (max-width: 1440px) {
+@media (min-width: 1200px), (max-width: 1440px) {
   .margin-ForDesk-0ForMob {
     margin-left: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .margin-ForDesk-0ForMob {
     margin-left: 0px;
   }
