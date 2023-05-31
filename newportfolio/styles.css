@@ -2092,10 +2092,10 @@ nav {
 }
 nav ul {
   color: white;
-  margin: 0;
+  margin: 2vw;
 }
 nav ul li a {
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: white;
 }
 
