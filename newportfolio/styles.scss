@@ -31,8 +31,15 @@
 .noAnalysis {
   border: none !important;
 }
-.w-12vw {
-  width: 12.5vw;
+.w-12vw-xl {
+  @media (min-width: 1199px) {
+    width: 12.5vw !important;
+  }
+}
+.w-5vw {
+  @media (max-width: 1199px) {
+    width: 5vw !important;
+  }
 }
 .mt-50px {
   margin-top: 50px;
@@ -270,6 +277,9 @@ section {
 }
 .analysis-Yellow /*id of topSection*/ {
   border: 12px solid yellow;
+}
+.analysis-Red {
+  border: 12px solid red;
 }
 .analysis-Green {
   border: 8px solid green;

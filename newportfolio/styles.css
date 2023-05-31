@@ -25,8 +25,16 @@
   border: none !important;
 }
 
-.w-12vw {
-  width: 12.5vw;
+@media (min-width: 1199px) {
+  .w-12vw-xl {
+    width: 12.5vw !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  .w-5vw {
+    width: 5vw !important;
+  }
 }
 
 .mt-50px {
@@ -715,6 +723,10 @@ section {
 
 .analysis-Yellow {
   border: 12px solid yellow;
+}
+
+.analysis-Red {
+  border: 12px solid red;
 }
 
 .analysis-Green {
