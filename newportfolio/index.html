@@ -18,12 +18,12 @@
 
 <!--//to test without analysis colours:-->
 <script>
-  // $(document).ready(function(){
-  //   //remove 'analysis-[color]... classes from elements'
-  //   $(".analysis").each(function(){
-  //     $(this).removeClass("analysis-Red analysis-Yellow analysis-Green analysis-Cyan analysis-Purple")
-  //   })
-  // })
+  $(document).ready(function(){
+    //remove 'analysis-[color]... classes from elements'
+    $(".analysis").each(function(){
+      $(this).removeClass("analysis-Red analysis-Yellow analysis-Green analysis-Cyan analysis-Purple")
+    })
+  })
 </script>
 
 
@@ -132,7 +132,7 @@
 
 
           <!------->
-          <div id="cyan" class="analysis analysis-Cyan d-flex ml-40 flex-column-reverse flex-xl-row align-items-xl-end">
+          <div id="cyan" class="cyan analysis analysis-Cyan greyBdr-left d-flex ml-40 flex-column-reverse flex-xl-row align-items-xl-end">
             <div class="fullHeightLeftVertGreyLine h-100 position-relative"></div> <!--spans the whole height-->
             
             <div id="purple" class="analysis analysis-Purple leftBanner d-flex d-xl-none greyBdr-all">
@@ -154,7 +154,8 @@
               </div>
             </div>
               <div class="longLeft-RightVertGreyLine h-30px relative"></div> <!--spans 1.5 sections-->
-            <article id="purple2"class="analysis analysis-Purple pt-12vh meFanaticalAndDescription h-100">
+            <!--ml-40 is needed for non analysis alignment-->
+              <article id="purple2"class="analysis analysis-Purple ml-40 pt-12vh meFanaticalAndDescription h-100">
               <summary class="whoAndWhatIAm mb-40 d-none d-xl-flex justify-content-between">
                 <h3>TYE GOULDER</h3>
                 <h3>|</h3>
@@ -163,7 +164,7 @@
                 <h3>PRODUCT DESIGNER</h3>
               </summary>
               <div class="highlighted relative"></div>
-              <h1 class="lineh-0p9 mb-40">FANATICAL ABOUT <em>CREATIVITY</em></h1>
+              <h1 class="position-relative lineh-0p9 mb-40">FANATICAL ABOUT <em>CREATIVITY</em></h1>
               <h2 class="italic mb-60">I take great pleasure into incorporating originality into my projects.</h2>
             </article>
           
@@ -182,8 +183,12 @@
 
 <div id="yellow2" class="analysis analysis-Yellow">
   <div class="divider thiccDivider position-absolute w-100 goesToRight"></div>
+  <div id="lightGreyDown" class="greybgFiller position-absolute h-100"></div>
 </div>
         <section id="yellow3"class="analysis analysis-Yellow" id="projectSection">
+          <div id="cyan2" class="cyan greyBdr-left">
+
+          </div>
         </section>
         <div class="Divider relative goesToRight goesToRight"></div>
         <div class="filler relative goesToRight" id="secondFiller"></div>

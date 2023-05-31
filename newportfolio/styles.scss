@@ -12,6 +12,7 @@
   --s1TopMargin: 80px;
   --vBlockWidth: 55px;
   --XLSCREEN: 1200px;
+  --DIVIDER1HEIGHT: 30px;
 }
 @mixin margin($marginTop, $marginBottom) {
   margin-top: $marginTop;
@@ -105,7 +106,7 @@
   justify-content: center;
   margin-top: var(--navHeight);
   z-index: 1;
-  height: 60vh;
+  height: 70vh;
   .cover {
     width: 100%;
     // background-color: hsl(0 0 calc(10 + calc(calc(var(--mainRevealWidth) * 100) / 100vw))); /*hsl(0,0,10 +mainRevealWidth*100/vw*/
@@ -302,9 +303,6 @@ section {
   }
   #yellow1 {
     #cyan {
-      @media (max-width: 1199px) {
-        margin-left: 0 !important;
-      }
       #purple2 {
         @media (min-width: 1199px) {
           margin-left: 6vw !important;
@@ -315,6 +313,17 @@ section {
           font-size: 7rem;
           @media (max-width: 1199px) {
             font-size: 13vw !important;
+          }
+          ::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            top: 10px;
+            left: -29px;
+            width: 650px;
+            height: 79px;
+            z-index: -1;
+            background-color: var(--grey);
           }
         }
         h2,
@@ -330,14 +339,25 @@ section {
   }
   #yellow2 {
     width: 100%;
-    height: 30px;
+    height: var(--DIVIDER1HEIGHT);
     .thiccDivider {
-      height: 20px;
+      height: var(--DIVIDER1HEIGHT);
     }
+    #lightGreyDown {
+      width: 20px;
+    }
+  }
+}
+.cyan {
+  @media (max-width: 1199px) {
+    margin-left: 0 !important;
   }
 }
 .divider {
   background-color: black;
+}
+.greybgFiller {
+  background-color: var(--grey);
 }
 .analysis-Yellow /*id of topSection*/ {
   border: 12px solid yellow;

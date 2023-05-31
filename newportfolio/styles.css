@@ -12,6 +12,7 @@
   --s1TopMargin: 80px;
   --vBlockWidth: 55px;
   --XLSCREEN: 1200px;
+  --DIVIDER1HEIGHT: 30px;
 }
 
 * {
@@ -110,7 +111,7 @@
   justify-content: center;
   margin-top: var(--navHeight);
   z-index: 1;
-  height: 60vh;
+  height: 70vh;
 }
 #rails .cover {
   width: 100%;
@@ -2123,11 +2124,6 @@ section {
 #red #lFiller1 {
   margin-top: 12vh;
 }
-@media (max-width: 1199px) {
-  #red #yellow1 #cyan {
-    margin-left: 0 !important;
-  }
-}
 @media (min-width: 1199px) {
   #red #yellow1 #cyan #purple2 {
     margin-left: 6vw !important;
@@ -2143,6 +2139,17 @@ section {
     font-size: 13vw !important;
   }
 }
+#red #yellow1 #cyan #purple2 h1 ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  top: 10px;
+  left: -29px;
+  width: 650px;
+  height: 79px;
+  z-index: -1;
+  background-color: var(--grey);
+}
 #red #yellow1 #cyan #purple2 h2,
 #red #yellow1 #cyan #purple2 h3 {
   font-size: 1rem;
@@ -2153,14 +2160,27 @@ section {
 }
 #red #yellow2 {
   width: 100%;
-  height: 30px;
+  height: var(--DIVIDER1HEIGHT);
 }
 #red #yellow2 .thiccDivider {
-  height: 20px;
+  height: var(--DIVIDER1HEIGHT);
+}
+#red #yellow2 #lightGreyDown {
+  width: 20px;
+}
+
+@media (max-width: 1199px) {
+  .cyan {
+    margin-left: 0 !important;
+  }
 }
 
 .divider {
   background-color: black;
+}
+
+.greybgFiller {
+  background-color: var(--grey);
 }
 
 .analysis-Yellow {
