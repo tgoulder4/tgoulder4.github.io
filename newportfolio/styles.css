@@ -2128,7 +2128,7 @@ section {
     margin-left: 0 !important;
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 1199px) {
   #red #yellow1 #cyan #purple2 {
     margin-left: 6vw !important;
   }
@@ -2150,6 +2150,17 @@ section {
 #red #yellow1 #cyan #purple2 em {
   font-weight: 800;
   font-style: normal;
+}
+#red #yellow2 {
+  width: 100%;
+  height: 30px;
+}
+#red #yellow2 .thiccDivider {
+  height: 20px;
+}
+
+.divider {
+  background-color: black;
 }
 
 .analysis-Yellow {
