@@ -271,10 +271,10 @@ nav {
   left: 0;
   ul {
     color: white;
-    margin: 2vw;
+    margin: 2.5vw;
     li {
       a {
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: white;
       }
     }
@@ -314,12 +314,12 @@ section {
           line-height: 0.9;
           font-size: 7rem;
           @media (max-width: 1199px) {
-            font-size: 9rem !important;
+            font-size: 13vw !important;
           }
         }
         h2,
         h3 {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
         em {
           font-weight: 800;
