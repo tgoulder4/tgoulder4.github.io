@@ -6,12 +6,12 @@
   --lineColour: #191919;
   --primary_colour: #191919;
   --secondary_colour: #2f2f2f;
-  --grey: #e9e9e9;
+  --grey: #a6a6a6;
   --desk1Container1Width: 630px; /*at a window width 1000*/
   --desk2Container1Width: 1031px; /*at a window width 1600*/
   --s1TopMargin: 80px;
   --vBlockWidth: 55px;
-  --largeScreen: 1200px;
+  --XLSCREEN: 1200px;
 }
 
 * {
@@ -25,12 +25,44 @@
   border: none !important;
 }
 
+.w-12vw {
+  width: 12vw;
+}
+
+.mt-50px {
+  margin-top: 50px;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.bg-black {
+  background-color: black;
+}
+
 .absolute {
   position: absolute;
 }
 
-.relative {
-  position: relative;
+.border-left {
+  border-left: 2px solid var(--grey);
+}
+
+.border-right {
+  border-right: 2px solid var(--grey);
+}
+
+.border-bottom {
+  border-bottom: 2px solid var(--grey);
+}
+
+.border-top {
+  border-top: 2px solid var(--grey);
+}
+
+.border-all {
+  border: 2px solid var(--grey);
 }
 
 .flexItemsCenter {
@@ -142,9 +174,13 @@
   animation: adjustHeight 20s infinite;
 }
 #rails #mainReveal #center #shapeShift-container #shapeShift {
-  height: 350px;
   width: 100%;
   background-color: var(--primary_colour);
+}
+@media (max-height: 600px) {
+  #rails #mainReveal #center #shapeShift-container #shapeShift {
+    height: 170px !important;
+  }
 }
 #rails #mainReveal #center #shapeShift-container #shapeShift .block {
   background-color: white;
@@ -656,6 +692,17 @@ nav ul li a {
 }
 
 /*main gets display flex. push center shapeshift outwards*/
+@media (max-width: 1999px) {
+  .leftBannerAreaIncludingLines {
+    height: 400px;
+  }
+}
+@media (min-width: 1999px) {
+  .leftBannerAreaIncludingLines {
+    height: 100%;
+  }
+}
+
 .grey {
   background-color: var(--grey);
 }
@@ -709,25 +756,14 @@ section {
   border: 12px solid purple;
 }
 
-@media (min-width: 768px) {
+@media (min-width: var(--XLSCREEN)) {
   .pl-ForDesk-0ForMob {
     padding-left: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: var(--XLSCREEN)) {
   .pl-ForDesk-0ForMob {
     padding-left: 0px;
-  }
-}
-
-@media (min-width: 1200px), (max-width: 1440px) {
-  .margin-ForDesk-0ForMob {
-    margin-left: 40px;
-  }
-}
-@media (max-width: 1200px) {
-  .margin-ForDesk-0ForMob {
-    margin-left: 0px;
   }
 }
 
@@ -757,7 +793,7 @@ section {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: var(--XLSCREEN)) {
   .maxw-xl-h-100px-w-100 {
     height: 100px;
     width: 100%;
@@ -776,7 +812,7 @@ section {
   height: 800px;
 }
 
-@media (max-width: 1365px), (max-width: 1200px) {
+@media (max-width: 1365px), (max-width: var(--XLSCREEN)) {
   .fs-adjustForWidth {
     font-size: 10vw;
   }
