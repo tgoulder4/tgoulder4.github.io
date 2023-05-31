@@ -36,13 +36,16 @@
     width: 12.5vw !important;
   }
 }
-.w-5vw {
+.w-7vw {
   @media (max-width: 1199px) {
-    width: 5vw !important;
+    width: 7vw !important;
   }
 }
-.mt-50px {
-  margin-top: 50px;
+.pt-12vh {
+  padding-top: 12vh;
+}
+.mt-100 {
+  margin-top: 100px;
 }
 .left-0 {
   left: 0;
@@ -198,7 +201,20 @@
     }
   }
 }
-@for $i from 1 through 55 {
+$i: 10;
+@while $i < 200 {
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
+  $i: $i + 10;
+}
+@for $i from 1 through 200 {
   .mt-#{$i}per {
     margin-top: #{$i}#{"%"};
   }
@@ -206,12 +222,18 @@
     margin-bottom: #{$i}#{"%"};
   }
 }
+.minw-150px {
+  min-width: 150px;
+}
 .hLine {
   width: 100%;
   min-height: var(--hLineHeight);
   max-height: var(--hLineHeight);
 
   flex-shrink: 0;
+}
+.lineh-0p9 {
+  line-height: 0.9;
 }
 .vLine {
   height: 100%;
@@ -264,7 +286,6 @@ nav {
 }
 .deskLeftBanner {
   height: 100%;
-  margin-right: 10px;
 }
 .grey {
   background-color: var(--grey);
@@ -275,6 +296,40 @@ nav {
 section {
   border-bottom: 10px solid black; //--New border change
 }
+#red {
+  #lFiller1 {
+    margin-top: 12vh;
+  }
+  #yellow1 {
+    #cyan {
+      @media (max-width: 1199px) {
+        margin-left: 0 !important;
+      }
+      #purple2 {
+        @media (max-width: 1199px) {
+          margin-left: 6vw !important;
+        }
+        h1 {
+          font-weight: 700;
+          line-height: 0.9;
+          font-size: 7rem;
+          @media (max-width: 1199px) {
+            font-size: 9rem !important;
+          }
+        }
+        h2,
+        h3 {
+          font-size: 1.2rem;
+        }
+        em {
+          font-weight: 800;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
+
 .analysis-Yellow /*id of topSection*/ {
   border: 12px solid yellow;
 }
@@ -312,14 +367,6 @@ section {
 .analysis-Purple {
   border: 12px solid purple;
 }
-.pl-ForDesk-0ForMob {
-  @media (min-width: var(--XLSCREEN)) {
-    padding-left: 40px;
-  }
-  @media (max-width: var(--XLSCREEN)) {
-    padding-left: 0px;
-  }
-}
 .flex-xl-gap-0 {
   @media (min-width: 1400px) {
     gap: 0px;
@@ -356,7 +403,4 @@ section {
 }
 .h-800px {
   height: 800px;
-}
-.fs-10vw {
-  font-size: 10vw;
 }
