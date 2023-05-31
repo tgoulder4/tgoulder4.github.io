@@ -6,7 +6,7 @@
   --lineColour: #191919;
   --primary_colour: #191919;
   --secondary_colour: #2f2f2f;
-  --grey: #a6a6a6;
+  --grey: #c8c8c8;
   --desk1Container1Width: 630px; /*at a window width 1000*/
   --desk2Container1Width: 1031px; /*at a window width 1600*/
   --s1TopMargin: 80px;
@@ -26,7 +26,7 @@
 }
 
 .w-12vw {
-  width: 12vw;
+  width: 12.5vw;
 }
 
 .mt-50px {
@@ -45,23 +45,23 @@
   position: absolute;
 }
 
-.border-left {
+.greyBdr-left {
   border-left: 2px solid var(--grey);
 }
 
-.border-right {
+.greyBdr-right {
   border-right: 2px solid var(--grey);
 }
 
-.border-bottom {
+.greyBdr-bottom {
   border-bottom: 2px solid var(--grey);
 }
 
-.border-top {
+.greyBdr-top {
   border-top: 2px solid var(--grey);
 }
 
-.border-all {
+.greyBdr-all {
   border: 2px solid var(--grey);
 }
 
@@ -692,15 +692,13 @@ nav ul li a {
 }
 
 /*main gets display flex. push center shapeshift outwards*/
-@media (max-width: 1999px) {
-  .leftBannerAreaIncludingLines {
-    height: 400px;
-  }
+.leftBanner {
+  height: 100px;
 }
-@media (min-width: 1999px) {
-  .leftBannerAreaIncludingLines {
-    height: 100%;
-  }
+
+.deskLeftBanner {
+  height: 100%;
+  margin-right: 10px;
 }
 
 .grey {
@@ -712,7 +710,6 @@ nav ul li a {
 }
 
 section {
-  outline: 4px solid red;
   border-bottom: 10px solid black;
 }
 
@@ -750,6 +747,10 @@ section {
 
 .wFiller {
   width: 100%;
+}
+
+.w-30vw {
+  width: 30vw;
 }
 
 .analysis-Purple {
@@ -812,13 +813,6 @@ section {
   height: 800px;
 }
 
-@media (max-width: 1365px), (max-width: var(--XLSCREEN)) {
-  .fs-adjustForWidth {
-    font-size: 10vw;
-  }
-}
-@media (min-width: 1600px) {
-  .fs-adjustForWidth {
-    font-size: 11rem;
-  }
+.fs-10vw {
+  font-size: 10vw;
 }/*# sourceMappingURL=styles.css.map */

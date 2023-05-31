@@ -6,7 +6,7 @@
   --lineColour: #191919;
   --primary_colour: #191919;
   --secondary_colour: #2f2f2f;
-  --grey: #a6a6a6;
+  --grey: #c8c8c8;
   --desk1Container1Width: 630px; /*at a window width 1000*/
   --desk2Container1Width: 1031px; /*at a window width 1600*/
   --s1TopMargin: 80px;
@@ -32,7 +32,7 @@
   border: none !important;
 }
 .w-12vw {
-  width: 12vw;
+  width: 12.5vw;
 }
 .mt-50px {
   margin-top: 50px;
@@ -46,19 +46,19 @@
 .absolute {
   position: absolute;
 }
-.border-left {
+.greyBdr-left {
   border-left: 2px solid var(--grey);
 }
-.border-right {
+.greyBdr-right {
   border-right: 2px solid var(--grey);
 }
-.border-bottom {
+.greyBdr-bottom {
   border-bottom: 2px solid var(--grey);
 }
-.border-top {
+.greyBdr-top {
   border-top: 2px solid var(--grey);
 }
-.border-all {
+.greyBdr-all {
   border: 2px solid var(--grey);
 }
 .flexItemsCenter {
@@ -252,13 +252,12 @@ nav {
   }
 }
 /*main gets display flex. push center shapeshift outwards*/
-.leftBannerAreaIncludingLines {
-  @media (max-width: 1999px) {
-    height: 400px;
-  }
-  @media (min-width: 1999px) {
-    height: 100%;
-  }
+.leftBanner {
+  height: 100px;
+}
+.deskLeftBanner {
+  height: 100%;
+  margin-right: 10px;
 }
 .grey {
   background-color: var(--grey);
@@ -267,7 +266,6 @@ nav {
   background-color: var(--primary_colour);
 }
 section {
-  outline: 4px solid red;
   border-bottom: 10px solid black; //--New border change
 }
 .analysis-Yellow /*id of topSection*/ {
@@ -297,6 +295,9 @@ section {
 }
 .wFiller {
   width: 100%;
+}
+.w-30vw {
+  width: 30vw;
 }
 .analysis-Purple {
   border: 12px solid purple;
@@ -346,13 +347,6 @@ section {
 .h-800px {
   height: 800px;
 }
-.fs-adjustForWidth {
-  @media (max-width: 1365px), (max-width: var(--XLSCREEN)) {
-    //random measurement to lg
-    font-size: 10vw;
-  }
-  @media (min-width: 1600px) {
-    //1600 is random
-    font-size: 11rem;
-  }
+.fs-10vw {
+  font-size: 10vw;
 }
