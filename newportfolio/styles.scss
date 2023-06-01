@@ -13,6 +13,7 @@
   --vBlockWidth: 55px;
   --XLSCREEN: 1200px;
   --DIVIDER1HEIGHT: 30px;
+  --CYANMARGINWIDTH: 70px;
 }
 @mixin margin($marginTop, $marginBottom) {
   margin-top: $marginTop;
@@ -305,7 +306,7 @@ section {
     #cyan {
       #purple2 {
         @media (min-width: 1199px) {
-          margin-left: 6vw !important;
+          margin-left: 5vw !important;
         }
         h1 {
           font-weight: 700;
@@ -344,11 +345,12 @@ section {
       height: var(--DIVIDER1HEIGHT);
     }
     #lightGreyDown {
-      width: 20px;
+      width: var(--CYANMARGINWIDTH);
     }
   }
 }
 .cyan {
+  margin-left: var(--CYANMARGINWIDTH);
   @media (max-width: 1199px) {
     margin-left: 0 !important;
   }

@@ -13,6 +13,7 @@
   --vBlockWidth: 55px;
   --XLSCREEN: 1200px;
   --DIVIDER1HEIGHT: 30px;
+  --CYANMARGINWIDTH: 70px;
 }
 
 * {
@@ -2126,7 +2127,7 @@ section {
 }
 @media (min-width: 1199px) {
   #red #yellow1 #cyan #purple2 {
-    margin-left: 6vw !important;
+    margin-left: 5vw !important;
   }
 }
 #red #yellow1 #cyan #purple2 h1 {
@@ -2166,9 +2167,12 @@ section {
   height: var(--DIVIDER1HEIGHT);
 }
 #red #yellow2 #lightGreyDown {
-  width: 20px;
+  width: var(--CYANMARGINWIDTH);
 }
 
+.cyan {
+  margin-left: var(--CYANMARGINWIDTH);
+}
 @media (max-width: 1199px) {
   .cyan {
     margin-left: 0 !important;
