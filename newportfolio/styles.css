@@ -2179,6 +2179,7 @@ section {
 }
 #red #yellow2 #lightGreyDown {
   width: var(--CYANMARGINWIDTH);
+  height: 70vw;
 }
 #red #yellow3 .cyan2 {
   display: grid;
@@ -2205,7 +2206,7 @@ section {
 }
 #red #yellow3 .cyan2 .purple4 {
   grid-area: projectArea;
-  padding: 3.5vw;
+  padding: 50px;
   gap: 30px;
 }
 #red #yellow3 .cyan2 .purple4 #scrollContainer {
@@ -2250,11 +2251,18 @@ section {
   color: white !important;
   max-width: 120px;
 }
-#red #yellow3 .cyan2 #purple5 {
+#red #yellow3 .cyan2 .githubWrapper {
+  padding-bottom: 50px;
+}
+#red #yellow3 .cyan2 .githubWrapper .shortHeightWrapper {
+  background-color: var(--grey);
+  height: 100%;
+}
+#red #yellow3 .cyan2 .githubWrapper #purple5 {
   grid-area: githubArea;
   padding: 30px;
 }
-#red #yellow3 .cyan2 #purple5 i {
+#red #yellow3 .cyan2 .githubWrapper #purple5 i {
   color: black !important;
 }
 

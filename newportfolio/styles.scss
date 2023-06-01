@@ -356,6 +356,7 @@ section {
     height: var(--DIVIDER1HEIGHT);
     #lightGreyDown {
       width: var(--CYANMARGINWIDTH);
+      height: 70vw;
     }
   }
   #yellow3 {
@@ -385,7 +386,7 @@ section {
       }
       .purple4 {
         grid-area: projectArea;
-        padding: 3.5vw;
+        padding: 50px;
         gap: 30px;
         #scrollContainer {
           width: 100%;
@@ -434,11 +435,18 @@ section {
           }
         }
       }
-      #purple5 {
-        grid-area: githubArea;
-        padding: 30px;
-        i {
-          color: black !important;
+      .githubWrapper {
+        padding-bottom: 50px;
+        .shortHeightWrapper {
+          background-color: var(--grey);
+          height: 100%;
+        }
+        #purple5 {
+          grid-area: githubArea;
+          padding: 30px;
+          i {
+            color: black !important;
+          }
         }
       }
     }
