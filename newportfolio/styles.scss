@@ -325,6 +325,10 @@ section {
             width: 650px;
             height: 79px;
             z-index: -1;
+            @media (max-width: 1199px) {
+              width: 72vw !important;
+              height: 9vw !important;
+            }
             background-color: var(--grey);
           }
         }
@@ -356,11 +360,12 @@ section {
         "blank summary githubArea"
         "projectArea projectArea githubArea";
 
-      grid-template-rows: 20vh 20vh 20vh;
+      grid-template-rows: auto auto;
       grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH);
       .purple3 {
         grid-area: summary;
         padding-left: 6vw;
+        padding-right: 6vw;
         q {
           font-weight: 400;
         }
@@ -381,6 +386,9 @@ section {
       //IT 3 ROWS?!
       #purple5 {
         grid-area: githubArea;
+        i {
+          color: black !important;
+        }
       }
     }
   }

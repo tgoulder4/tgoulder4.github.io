@@ -2152,6 +2152,12 @@ section {
   z-index: -1;
   background-color: var(--grey);
 }
+@media (max-width: 1199px) {
+  #red #yellow1 #cyan #purple2 h1 ::after {
+    width: 72vw !important;
+    height: 9vw !important;
+  }
+}
 #red #yellow1 #cyan #purple2 h2,
 #red #yellow1 #cyan #purple2 h3 {
   font-size: 1rem;
@@ -2173,12 +2179,13 @@ section {
 #red #yellow3 .cyan2 {
   display: grid;
   grid-template-areas: "blank summary githubArea" "projectArea projectArea githubArea";
-  grid-template-rows: 20vh 20vh 20vh;
+  grid-template-rows: auto auto;
   grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH);
 }
 #red #yellow3 .cyan2 .purple3 {
   grid-area: summary;
   padding-left: 6vw;
+  padding-right: 6vw;
 }
 #red #yellow3 .cyan2 .purple3 q {
   font-weight: 400;
@@ -2194,6 +2201,9 @@ section {
 }
 #red #yellow3 .cyan2 #purple5 {
   grid-area: githubArea;
+}
+#red #yellow3 .cyan2 #purple5 i {
+  color: black !important;
 }
 
 .cyan {
@@ -2222,7 +2232,7 @@ section {
 }
 
 .analysis-Green {
-  outline: 8px solid green;
+  border: 8px solid green;
 }
 
 .analysis-Cyan {
