@@ -350,7 +350,7 @@ section {
     }
   }
   #yellow3 {
-    #cyan2 {
+    .cyan2 {
       display: grid;
       grid-template-areas:
         "blank summary githubArea"
@@ -358,16 +358,27 @@ section {
 
       grid-template-rows: 20vh 20vh 20vh;
       grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH);
-      #purple3 {
+      .purple3 {
         grid-area: summary;
         padding-left: 6vw;
         q {
           font-weight: 400;
         }
       }
-      #purple4 {
+      .purple4 {
         grid-area: projectArea;
+        .green2 {
+          max-width: 400px;
+          .legend {
+            p:nth-child(2) {
+              text-decoration: underline;
+            }
+          }
+        }
       }
+
+      //current problem: HOW DO I MAKE THE GRID TWO ROWS?! WHY IS
+      //IT 3 ROWS?!
       #purple5 {
         grid-area: githubArea;
       }
@@ -387,13 +398,13 @@ section {
   background-color: var(--grey);
 }
 .analysis-Yellow /*id of topSection*/ {
-  border: 12px solid yellow;
+  outline: 12px solid yellow;
 }
 .analysis-Red {
-  border: 12px solid red;
+  outline: 12px solid red;
 }
 .analysis-Green {
-  border: 8px solid green;
+  outline: 8px solid green;
 }
 .analysis-Cyan {
   border: 12px solid cyan;

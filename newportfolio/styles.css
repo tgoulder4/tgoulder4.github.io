@@ -2170,23 +2170,29 @@ section {
 #red #yellow2 #lightGreyDown {
   width: var(--CYANMARGINWIDTH);
 }
-#red #yellow3 #cyan2 {
+#red #yellow3 .cyan2 {
   display: grid;
   grid-template-areas: "blank summary githubArea" "projectArea projectArea githubArea";
   grid-template-rows: 20vh 20vh 20vh;
   grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH);
 }
-#red #yellow3 #cyan2 #purple3 {
+#red #yellow3 .cyan2 .purple3 {
   grid-area: summary;
   padding-left: 6vw;
 }
-#red #yellow3 #cyan2 #purple3 q {
+#red #yellow3 .cyan2 .purple3 q {
   font-weight: 400;
 }
-#red #yellow3 #cyan2 #purple4 {
+#red #yellow3 .cyan2 .purple4 {
   grid-area: projectArea;
 }
-#red #yellow3 #cyan2 #purple5 {
+#red #yellow3 .cyan2 .purple4 .green2 {
+  max-width: 400px;
+}
+#red #yellow3 .cyan2 .purple4 .green2 .legend p:nth-child(2) {
+  text-decoration: underline;
+}
+#red #yellow3 .cyan2 #purple5 {
   grid-area: githubArea;
 }
 
@@ -2208,15 +2214,15 @@ section {
 }
 
 .analysis-Yellow {
-  border: 12px solid yellow;
+  outline: 12px solid yellow;
 }
 
 .analysis-Red {
-  border: 12px solid red;
+  outline: 12px solid red;
 }
 
 .analysis-Green {
-  border: 8px solid green;
+  outline: 8px solid green;
 }
 
 .analysis-Cyan {

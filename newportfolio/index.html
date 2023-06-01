@@ -19,12 +19,12 @@
 
 <!--//to test without analysis colours:-->
 <script>
-  $(document).ready(function(){
-    //remove 'analysis-[color]... classes from elements'
-    $(".analysis").each(function(){
-      $(this).removeClass("analysis-Red analysis-Yellow analysis-Green analysis-Cyan analysis-Purple")
-    })
-  })
+  // $(document).ready(function(){
+  //   //remove 'analysis-[color]... classes from elements'
+  //   $(".analysis").each(function(){
+  //     $(this).removeClass("analysis-Red analysis-Yellow analysis-Green analysis-Cyan analysis-Purple")
+  //   })
+  // })
 </script>
 
 
@@ -195,21 +195,26 @@
 
         <!--current-->
         <section id="yellow3"class="analysis analysis-Yellow" id="projectSection">
-          <div id="cyan2" class="cyan analysis analysis-Cyan greyBdr-left">
+          <div id="contentS2" class="cyan cyan2 analysis analysis-Cyan greyBdr-left">
             <!--grid!-->
             <div id="place1"></div>
-            <div id="purple3" class="analysis analysis-Purple greyBdr-left d-flex flex-column align-items-start justify-content-center">
+            <div id="quoteArea" class="purple3 analysis analysis-Purple greyBdr-left d-flex flex-column align-items-start justify-content-center">
               <i class="fa-sharp fa-solid fa-quote-left"></i>
               <q>With a keen eye for user experience, I continually refine my product design skills while practicing my front-end development abilities to create intuitive projects.</q>
             </div>
             <div id="place3"></div>
-            <div id="purple4" class="analysis analysis-Purple p-10 greyBdr-top">
-              <div class="analysis analysis-Green">
-                <div class="analysis analysis-Red"></div>
-                <div class="analysis analysis-Red"></div>
-              </div>
+            <div id="projectArea" class="purple4 analysis analysis-Purple p-10 d-flex flex-column greyBdr-top">
+                <div id="ttleProjects" class="green2 analysis analysis-Red d-flex flex-column">
+                  <div class="legend d-flex justify-content-between">
+                    <p>TOP 3</p>
+                    <p>View all</p>
+                  </div>
+                  <h1>PROJECTS</h1>
+                  <h1>////////</h1>
+                </div>
+                <div id="projectCards" class="green3 analysis analysis-Red"></div>
             </div>
-            <div id="purple5" class="analysis analysis-Purple greyBdr-left">
+            <div id="purple5" class="analysis analysis-Purple greyBdr-left d-flex justify-content-center pt-12vh">
               <i class="fa-brands fa-github"></i>
             </div>
           </div>
