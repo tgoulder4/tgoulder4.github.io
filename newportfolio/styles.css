@@ -2109,6 +2109,7 @@ nav ul li a {
 
 .deskLeftBanner {
   height: 100%;
+  margin-left: -2px;
 }
 
 .grey {
@@ -2172,6 +2173,7 @@ section {
 }
 #red .HigherContForRightFiller .thiccDivider {
   height: var(--DIVIDER1HEIGHT);
+  z-index: -2;
 }
 #red #yellow2 {
   width: 100%;
@@ -2179,7 +2181,8 @@ section {
 }
 #red #yellow2 #lightGreyDown {
   width: var(--CYANMARGINWIDTH);
-  height: 70vw;
+  height: calc(100% - 60px);
+  z-index: -1;
 }
 #red #yellow3 .cyan2 {
   display: grid;

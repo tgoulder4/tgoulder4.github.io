@@ -289,6 +289,7 @@ nav {
 }
 .deskLeftBanner {
   height: 100%;
+  margin-left: -2px;
 }
 .grey {
   background-color: var(--grey);
@@ -349,6 +350,7 @@ section {
   .HigherContForRightFiller {
     .thiccDivider {
       height: var(--DIVIDER1HEIGHT);
+      z-index: -2;
     }
   }
   #yellow2 {
@@ -356,7 +358,8 @@ section {
     height: var(--DIVIDER1HEIGHT);
     #lightGreyDown {
       width: var(--CYANMARGINWIDTH);
-      height: 70vw;
+      height: calc(100% - 60px);
+      z-index: -1;
     }
   }
   #yellow3 {
