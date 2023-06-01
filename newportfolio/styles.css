@@ -2119,6 +2119,10 @@ nav ul li a {
   background-color: var(--primary_colour);
 }
 
+.italic {
+  font-style: italic;
+}
+
 section {
   border-bottom: 10px solid black;
 }
@@ -2180,27 +2184,74 @@ section {
   display: grid;
   grid-template-areas: "blank summary githubArea" "projectArea projectArea githubArea";
   grid-template-rows: auto auto;
-  grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH);
+  grid-template-columns: var(--GREYBLOCKWIDTH) 2fr auto;
 }
 #red #yellow3 .cyan2 .purple3 {
   grid-area: summary;
   padding-left: 6vw;
   padding-right: 6vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 #red #yellow3 .cyan2 .purple3 q {
   font-weight: 400;
 }
 #red #yellow3 .cyan2 .purple4 {
   grid-area: projectArea;
+  padding-left: 3.5vw;
+  padding-top: 3.5vw;
+  padding-right: 3.5vw;
+  padding-bottom: 3.5vw;
+  gap: 30px;
+}
+#red #yellow3 .cyan2 .purple4 #scrollContainer {
+  width: 100%;
+}
+#red #yellow3 .cyan2 .purple4 h1 {
+  font-weight: 800;
+  line-height: 0.9;
+  font-size: 6vw;
 }
 #red #yellow3 .cyan2 .purple4 .green2 {
   max-width: 400px;
 }
+#red #yellow3 .cyan2 .purple4 .green2 h1:nth-child(3) {
+  color: grey;
+  letter-spacing: 0.2rem;
+}
 #red #yellow3 .cyan2 .purple4 .green2 .legend p:nth-child(2) {
   text-decoration: underline;
 }
+#red #yellow3 .cyan2 .purple4 .green3 {
+  gap: 8px;
+}
+#red #yellow3 .cyan2 .purple4 .green3 .projectCard {
+  height: 44vh;
+  min-width: 32%;
+}
+#red #yellow3 .cyan2 .purple4 .green3 .projectCard .imgFiller {
+  background-color: var(--grey);
+  flex-grow: 3;
+}
+#red #yellow3 .cyan2 .purple4 .green3 .projectCard summary {
+  padding: 0.8rem;
+}
+#red #yellow3 .cyan2 .purple4 .green3 .projectCard summary h3,
+#red #yellow3 .cyan2 .purple4 .green3 .projectCard summary p {
+  font-size: 1.1rem;
+}
+#red #yellow3 .cyan2 .purple4 .green3 .projectCard summary h3 {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+#red #yellow3 .cyan2 .purple4 .green3 .projectCard summary .btn-info {
+  background-color: black !important;
+  color: white !important;
+  max-width: 120px;
+}
 #red #yellow3 .cyan2 #purple5 {
   grid-area: githubArea;
+  padding: 10px;
 }
 #red #yellow3 .cyan2 #purple5 i {
   color: black !important;

@@ -296,6 +296,9 @@ nav {
 .black {
   background-color: var(--primary_colour);
 }
+.italic {
+  font-style: italic;
+}
 section {
   border-bottom: 10px solid black; //--New border change
 }
@@ -361,31 +364,75 @@ section {
         "projectArea projectArea githubArea";
 
       grid-template-rows: auto auto;
-      grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH);
+      grid-template-columns: var(--GREYBLOCKWIDTH) 2fr auto;
       .purple3 {
         grid-area: summary;
         padding-left: 6vw;
         padding-right: 6vw;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
         q {
           font-weight: 400;
         }
       }
       .purple4 {
         grid-area: projectArea;
+        padding-left: 3.5vw;
+        padding-top: 3.5vw;
+        padding-right: 3.5vw;
+        padding-bottom: 3.5vw;
+        gap: 30px;
+        #scrollContainer {
+          width: 100%;
+        }
+        h1 {
+          font-weight: 800;
+          line-height: 0.9;
+          font-size: 6vw;
+        }
         .green2 {
           max-width: 400px;
+          h1:nth-child(3) {
+            color: grey;
+            letter-spacing: 0.2rem;
+          }
           .legend {
             p:nth-child(2) {
               text-decoration: underline;
             }
           }
         }
+        .green3 {
+          gap: 8px;
+          .projectCard {
+            height: 44vh;
+            min-width: 32%;
+            .imgFiller {
+              background-color: var(--grey);
+              flex-grow: 3;
+            }
+            summary {
+              padding: 0.8rem;
+              h3,
+              p {
+                font-size: 1.1rem;
+              }
+              h3 {
+                font-weight: 700;
+                margin-bottom: 2px;
+              }
+              .btn-info {
+                background-color: black !important;
+                color: white !important;
+                max-width: 120px;
+              }
+            }
+          }
+        }
       }
-
-      //current problem: HOW DO I MAKE THE GRID TWO ROWS?! WHY IS
-      //IT 3 ROWS?!
       #purple5 {
         grid-area: githubArea;
+        padding: 10px;
         i {
           color: black !important;
         }
