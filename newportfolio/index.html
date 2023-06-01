@@ -19,12 +19,12 @@
 
 <!--//to test without analysis colours:-->
 <script>
-  // $(document).ready(function(){
-  //   //remove 'analysis-[color]... classes from elements'
-  //   $(".analysis").each(function(){
-  //     $(this).removeClass("analysis-Red analysis-Yellow analysis-Green analysis-Cyan analysis-Purple")
-  //   })
-  // })
+  $(document).ready(function(){
+    //remove 'analysis-[color]... classes from elements'
+    $(".analysis").each(function(){
+      $(this).removeClass("analysis-Red analysis-Yellow analysis-Green analysis-Cyan analysis-Purple")
+    })
+  })
 </script>
 
 
@@ -230,7 +230,7 @@
         <div class="filler relative goesToRight" id="secondFiller"></div>
         <section class="analysis analysis-Yellow" id="aboutMeSection">
         </section>
-        <div class="Divider absolute goesToLeft goesToLeft"></div>
+        <div class="Divider absolute goesToLeft"></div>
         <section class="analysis analysis-Yellow" id="contactMeSection">
           <div class="thiccDivider relative goesToLeft goesToRight"></div>
         </section>
