@@ -346,12 +346,14 @@ section {
       }
     }
   }
-  #yellow2 {
-    width: 100%;
-    height: var(--DIVIDER1HEIGHT);
+  .HigherContForRightFiller {
     .thiccDivider {
       height: var(--DIVIDER1HEIGHT);
     }
+  }
+  #yellow2 {
+    width: 100%;
+    height: var(--DIVIDER1HEIGHT);
     #lightGreyDown {
       width: var(--CYANMARGINWIDTH);
     }
@@ -360,9 +362,15 @@ section {
     .cyan2 {
       display: grid;
       grid-template-areas:
-        "blank summary githubArea"
+        "blank summary blank2"
         "projectArea projectArea githubArea";
-
+      #place1 {
+        grid-area: blank;
+      }
+      #place3 {
+        grid-area: blank2;
+        margin-bottom: -2px;
+      }
       grid-template-rows: auto auto;
       grid-template-columns: var(--GREYBLOCKWIDTH) 2fr auto;
       .purple3 {
@@ -377,10 +385,7 @@ section {
       }
       .purple4 {
         grid-area: projectArea;
-        padding-left: 3.5vw;
-        padding-top: 3.5vw;
-        padding-right: 3.5vw;
-        padding-bottom: 3.5vw;
+        padding: 3.5vw;
         gap: 30px;
         #scrollContainer {
           width: 100%;
@@ -403,7 +408,6 @@ section {
           }
         }
         .green3 {
-          gap: 8px;
           .projectCard {
             height: 44vh;
             min-width: 32%;
@@ -432,7 +436,7 @@ section {
       }
       #purple5 {
         grid-area: githubArea;
-        padding: 10px;
+        padding: 30px;
         i {
           color: black !important;
         }

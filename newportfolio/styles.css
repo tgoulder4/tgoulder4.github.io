@@ -2170,11 +2170,11 @@ section {
   font-weight: 800;
   font-style: normal;
 }
-#red #yellow2 {
-  width: 100%;
+#red .HigherContForRightFiller .thiccDivider {
   height: var(--DIVIDER1HEIGHT);
 }
-#red #yellow2 .thiccDivider {
+#red #yellow2 {
+  width: 100%;
   height: var(--DIVIDER1HEIGHT);
 }
 #red #yellow2 #lightGreyDown {
@@ -2182,9 +2182,16 @@ section {
 }
 #red #yellow3 .cyan2 {
   display: grid;
-  grid-template-areas: "blank summary githubArea" "projectArea projectArea githubArea";
+  grid-template-areas: "blank summary blank2" "projectArea projectArea githubArea";
   grid-template-rows: auto auto;
   grid-template-columns: var(--GREYBLOCKWIDTH) 2fr auto;
+}
+#red #yellow3 .cyan2 #place1 {
+  grid-area: blank;
+}
+#red #yellow3 .cyan2 #place3 {
+  grid-area: blank2;
+  margin-bottom: -2px;
 }
 #red #yellow3 .cyan2 .purple3 {
   grid-area: summary;
@@ -2198,10 +2205,7 @@ section {
 }
 #red #yellow3 .cyan2 .purple4 {
   grid-area: projectArea;
-  padding-left: 3.5vw;
-  padding-top: 3.5vw;
-  padding-right: 3.5vw;
-  padding-bottom: 3.5vw;
+  padding: 3.5vw;
   gap: 30px;
 }
 #red #yellow3 .cyan2 .purple4 #scrollContainer {
@@ -2221,9 +2225,6 @@ section {
 }
 #red #yellow3 .cyan2 .purple4 .green2 .legend p:nth-child(2) {
   text-decoration: underline;
-}
-#red #yellow3 .cyan2 .purple4 .green3 {
-  gap: 8px;
 }
 #red #yellow3 .cyan2 .purple4 .green3 .projectCard {
   height: 44vh;
@@ -2251,7 +2252,7 @@ section {
 }
 #red #yellow3 .cyan2 #purple5 {
   grid-area: githubArea;
-  padding: 10px;
+  padding: 30px;
 }
 #red #yellow3 .cyan2 #purple5 i {
   color: black !important;
