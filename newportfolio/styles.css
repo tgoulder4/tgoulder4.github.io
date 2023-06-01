@@ -12,8 +12,9 @@
   --s1TopMargin: 80px;
   --vBlockWidth: 55px;
   --XLSCREEN: 1200px;
-  --DIVIDER1HEIGHT: 30px;
+  --DIVIDER1HEIGHT: 40px;
   --CYANMARGINWIDTH: 70px;
+  --GREYBLOCKWIDTH: 150px;
 }
 
 * {
@@ -163,7 +164,7 @@
   position: relative;
   top: calc(-1 * var(--navHeight));
   z-index: 3;
-  background: linear-gradient(white 13.35%, var(--lineColour) 13.35%);
+  background: linear-gradient(white 8vh, var(--lineColour) 8vh);
   flex-shrink: 0;
 }
 #rails #mainReveal #center {
@@ -2169,6 +2170,25 @@ section {
 #red #yellow2 #lightGreyDown {
   width: var(--CYANMARGINWIDTH);
 }
+#red #yellow3 #cyan2 {
+  display: grid;
+  grid-template-areas: "blank summary githubArea" "projectArea projectArea githubArea";
+  grid-template-rows: 20vh 20vh 20vh;
+  grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH);
+}
+#red #yellow3 #cyan2 #purple3 {
+  grid-area: summary;
+  padding-left: 6vw;
+}
+#red #yellow3 #cyan2 #purple3 q {
+  font-weight: 400;
+}
+#red #yellow3 #cyan2 #purple4 {
+  grid-area: projectArea;
+}
+#red #yellow3 #cyan2 #purple5 {
+  grid-area: githubArea;
+}
 
 .cyan {
   margin-left: var(--CYANMARGINWIDTH);
@@ -2227,8 +2247,8 @@ section {
   width: 100%;
 }
 
-.w-30vw {
-  width: 30vw;
+.w-var-greyblw {
+  width: var(--GREYBLOCKWIDTH);
 }
 
 .analysis-Purple {

@@ -12,8 +12,9 @@
   --s1TopMargin: 80px;
   --vBlockWidth: 55px;
   --XLSCREEN: 1200px;
-  --DIVIDER1HEIGHT: 30px;
+  --DIVIDER1HEIGHT: 40px;
   --CYANMARGINWIDTH: 70px;
+  --GREYBLOCKWIDTH: 150px;
 }
 @mixin margin($marginTop, $marginBottom) {
   margin-top: $marginTop;
@@ -158,7 +159,7 @@
         position: relative;
         top: calc(-1 * var(--navHeight));
         z-index: 3;
-        background: linear-gradient(white 13.35%, var(--lineColour) 13.35%);
+        background: linear-gradient(white 8vh, var(--lineColour) 8vh);
         flex-shrink: 0;
       }
     }
@@ -348,6 +349,30 @@ section {
       width: var(--CYANMARGINWIDTH);
     }
   }
+  #yellow3 {
+    #cyan2 {
+      display: grid;
+      grid-template-areas:
+        "blank summary githubArea"
+        "projectArea projectArea githubArea";
+
+      grid-template-rows: 20vh 20vh 20vh;
+      grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH);
+      #purple3 {
+        grid-area: summary;
+        padding-left: 6vw;
+        q {
+          font-weight: 400;
+        }
+      }
+      #purple4 {
+        grid-area: projectArea;
+      }
+      #purple5 {
+        grid-area: githubArea;
+      }
+    }
+  }
 }
 .cyan {
   margin-left: var(--CYANMARGINWIDTH);
@@ -392,8 +417,8 @@ section {
 .wFiller {
   width: 100%;
 }
-.w-30vw {
-  width: 30vw;
+.w-var-greyblw {
+  width: var(--GREYBLOCKWIDTH);
 }
 .analysis-Purple {
   border: 12px solid purple;
