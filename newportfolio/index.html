@@ -18,14 +18,8 @@
 
 
 <!--//to test without analysis colours:-->
-<script>
-  $(document).ready(function(){
-    //remove 'analysis-[color]... classes from elements'
-    $(".analysis").each(function(){
-      $(this).removeClass("analysis-Red analysis-Yellow analysis-Cyan analysis-Purple")
-    })
-  })
-</script>
+<!-- <script src="toggleAnalysis.js">
+</script> -->
 
 
 
@@ -98,7 +92,7 @@
             <div class="vLine line tallVLine"></div>
             <!--color: difference-->
             
-            <div class="lgAccCont partHeight" id="lgAccCont">
+            <div class="lgAccCont partHeight" id="lgAccCont2">
               <div class="line hLine"></div>
               <div class="line hLine"></div>
               <div class="line hLine"></div>
@@ -126,7 +120,7 @@
 
       <div id="red" class="analysis analysis-Red w-75 d-flex greyBdr-left flex-column">
 
-        <div id="lFiller1"class="filler absolute left-0 w-7vw w-12vw-xl h-100 bg-black mt-100 goesToLeft" id="firstFiller"></div> <!-- absolute, move this to the left and down, left 0-->
+        <div id="lFiller1"class="filler position-absolute left-0 w-7vw w-12vw-xl h-100 bg-black mt-100 goesToLeft" id="firstFiller"></div> <!-- absolute, move this to the left and down, left 0-->
 
         <section id="yellow1" class="analysis analysis-Yellow flex-column pl-ForDesk-0ForMob d-flex align-items-stretch greyBdr-bottom" id="fanaticalSection">
 
@@ -160,9 +154,9 @@
               <summary class="whoAndWhatIAm mb-40 d-none d-xl-flex justify-content-between">
                 <h3>TYE GOULDER</h3>
                 <h3>|</h3>
-                <h3>FRONT-END DEVELOPER</h3>
+                <h3>FULL-STACK DEVELOPER</h3>
                 <h3>|</h3>
-                <h3>PRODUCT DESIGNER</h3>
+                <h3>LOVES OVERWATCH</h3>
               </summary>
               <div class="highlighted relative"></div>
               <h1 class="position-relative lineh-0p9 mb-40">FANATICAL ABOUT <em>CREATIVITY</em></h1>
@@ -191,12 +185,12 @@
     <section id="yellow3"class="analysis analysis-Yellow" id="projectSection">
       <div id="contentS2" class="cyan cyan2 analysis analysis-Cyan greyBdr-left">
         <!--grid!-->
-        <div id="place1" class=""></div>
+        <div id="place1" class="analysis analysis-Purple"></div>
         <div id="quoteArea" class="purple3 analysis analysis-Purple greyBdr-left d-flex flex-column align-items-start justify-content-center">
           <i class="fa-sharp fa-solid fa-quote-left"></i>
           <q>With a keen eye for user experience, I continually refine my product design skills while practicing my front-end development abilities to create intuitive projects.</q>
         </div>
-        <div id="place3" class="greyBdr-all"></div>
+        <div id="place3" class="analysis analysis-Purple greyBdr-all"></div>
         <div id="projectArea" class="purple4 analysis analysis-Purple p-10 d-flex flex-column greyBdr-top">
             <div id="ttleProjects" class="green2 analysis analysis-Red d-flex flex-column">
               <div class="legend d-flex justify-content-between">
@@ -245,12 +239,14 @@
             </div>
         </div>
         <div class="githubWrapper greyBdr-left greyBdr-right">
-          <div class="shortHeightWrapper">
-            <a href="https://github.com/tgoulder4" target="_blank" id="purple5" class="analysis analysis-Purple d-flex justify-content-center pt-12vh">
+          <div class="analysis analysis-Purple shortHeightWrapper">
+            <a href="https://github.com/tgoulder4" target="_blank" id="purple5" class="d-flex justify-content-center pt-12vh">
               <i class="fa-brands fa-github fa-3x"></i>
             </a>
           </div>
         </div>
+        <div id="place4" class="analysis analysis-Purple greyBdr-all"></div>
+        <div id="place3" class="analysis analysis-Purple greyBdr-all"></div>
       </div>
     </section>
   </div>
@@ -266,7 +262,7 @@
         <div class="filler relative goesToRight" id="secondFiller"></div>
         <section class="analysis analysis-Yellow" id="aboutMeSection">
         </section>
-        <div class="Divider absolute goesToLeft"></div>
+        <div class="Divider position-absolute goesToLeft"></div>
         <section class="analysis analysis-Yellow" id="contactMeSection">
           <div class="thiccDivider relative goesToLeft goesToRight"></div>
         </section>

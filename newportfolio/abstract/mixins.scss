@@ -1,0 +1,14 @@
+@mixin minw($mw) {
+  @media (min-width: $mw) {
+    @content;
+  }
+}
+@mixin maxw($mw) {
+  @media (max-width: $mw) {
+    @content;
+  }
+}
+@mixin lineShadow($rightshift, $bottomshift, $blur, $spread, $colour) {
+  box-shadow: $rightshift $bottomshift $blur $spread $colour;
+  -webkit-box-shadow: $rightshift $bottomshift $blur $spread $colour;
+}

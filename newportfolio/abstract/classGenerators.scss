@@ -1,0 +1,21 @@
+$i: 10;
+@while $i < 200 {
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
+  $i: $i + 10;
+}
+@for $i from 1 through 200 {
+  .mt-#{$i}per {
+    margin-top: #{$i}#{"%"};
+  }
+  .mb-#{$i}per {
+    margin-bottom: #{$i}#{"%"};
+  }
+}
