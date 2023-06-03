@@ -1,6 +1,6 @@
 @import "base/reset.css";
 @import "abstract/variables.css";
-@import "abstract/classGenerators.css";
+@import "abstract/customBsClasses.css";
 @import "abstract/colours.css";
 @media (min-width: 1199px) {
   .w-12vw-xl {
@@ -309,7 +309,7 @@ section {
   display: grid;
   grid-template-areas: "blank summary blank2 blank3" "projectArea projectArea githubArea blank4";
   grid-template-rows: auto auto;
-  grid-template-columns: var(--GREYBLOCKWIDTH) 42vw auto 100%;
+  grid-template-columns: var(--GREYBLOCKWIDTH) 55vw auto 100%;
 }
 #red #yellow3 .cyan2 #place1 {
   grid-area: blank;

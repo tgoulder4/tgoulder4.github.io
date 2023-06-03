@@ -1,7 +1,7 @@
 @import "base/reset.css";
 @import "abstract/variables.css";
 @import "abstract/mixins.scss";
-@import "abstract/classGenerators.css";
+@import "abstract/customBsClasses.css";
 @import "abstract/colours.css";
 
 .w-12vw-xl {
@@ -307,7 +307,7 @@ section {
         grid-area: blank4;
       }
       grid-template-rows: auto auto;
-      grid-template-columns: var(--GREYBLOCKWIDTH) 42vw auto 100%;
+      grid-template-columns: var(--GREYBLOCKWIDTH) 55vw auto 100%;
       .purple3 {
         grid-area: summary;
         padding-left: 6vw;
