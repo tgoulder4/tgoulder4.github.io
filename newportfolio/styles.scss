@@ -185,16 +185,19 @@ nav {
 .italic {
   font-style: italic;
 }
-section {
-  border-bottom: 10px solid black; //--New border change
-}
 #red {
   #lFiller1 {
-    margin-top: 12vh;
+    margin-top: var(--CYANMARGINWIDTH);
+    height: 91%;
   }
   #yellow1 {
     #cyan {
+      #greySocials {
+        padding-top: var(--CYANMARGINWIDTH);
+        padding-bottom: var(--CYANMARGINWIDTH);
+      }
       #purple2 {
+        padding-top: var(--CYANMARGINWIDTH);
         @media (min-width: 1199px) {
           margin-left: 5vw !important;
         }
@@ -243,22 +246,41 @@ section {
     height: var(--DIVIDER1HEIGHT);
     #lightGreyDown {
       width: var(--CYANMARGINWIDTH);
-      height: calc(100% - 60px);
+      height: 100%;
       z-index: -1;
     }
   }
   #yellow3 {
     .cyan2 {
       display: grid;
-      grid-template-areas:
-        "blank summary blank2 blank3"
-        "projectArea projectArea githubArea blank4";
+      @media (max-width: 1199px) {
+        grid-template-areas:
+          "summary summary"
+          "projectArea projectArea" "githubArea githubArea";
+        width: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        #place1,
+        #place3,
+        #place4,
+        #place5 {
+          display: none;
+        }
+      }
+      @media (min-width: 1199px) {
+        grid-template-areas:
+          "blank summary blank2 blank3"
+          "projectArea projectArea githubArea blank4";
+        grid-template-rows: auto auto;
+        grid-template-columns: var(--GREYBLOCKWIDTH) 47vw auto var(
+            --GREYBLOCKWIDTH
+          );
+      }
       #place1 {
         grid-area: blank;
       }
       #place3 {
         grid-area: blank2;
-        margin-bottom: -2px;
       }
       #place4 {
         grid-area: blank3;
@@ -266,14 +288,9 @@ section {
       #place5 {
         grid-area: blank4;
       }
-      grid-template-rows: auto auto;
-      grid-template-columns: var(--GREYBLOCKWIDTH) 55vw auto 100%;
       .purple3 {
         grid-area: summary;
-        padding-left: 6vw;
-        padding-right: 6vw;
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding: 50px;
         q {
           font-weight: 400;
         }
@@ -292,7 +309,7 @@ section {
         }
         .green2 {
           max-width: 400px;
-          h1:nth-child(3) {
+          h2:nth-child(3) {
             color: grey;
             letter-spacing: 0.2rem;
           }
@@ -330,7 +347,6 @@ section {
         }
       }
       .githubWrapper {
-        padding-bottom: 50px;
         grid-area: githubArea;
         .shortHeightWrapper {
           background-color: var(--grey);
@@ -346,6 +362,40 @@ section {
       }
     }
   }
+  #yellow4 {
+    #aboutMeSection {
+      display: grid;
+      grid-template-areas:
+        "leftBlank aboutMe rightBlank"
+        "leftBlank areaSkillSet rightBlank"
+        "leftBlank middleBlank rightBlank";
+      grid-template-rows: 30vw auto 15vw;
+      grid-template-columns: var(--CYANMARGINWIDTH) auto var(--CYANMARGINWIDTH);
+    }
+    #bl1 {
+      grid-area: leftBlank;
+    }
+    #bl2 {
+      grid-area: middleBlank;
+    }
+    #bl3 {
+      grid-area: rightBlank;
+    }
+    #titleArea {
+      grid-area: aboutMe;
+      padding-top: 50px;
+      padding-left: 50px;
+    }
+    #skillSetArea {
+      grid-area: areaSkillSet;
+    }
+  }
+}
+#projectArea h2,
+#aboutMeSection h2 {
+  font-weight: 800;
+  line-height: 0.9;
+  font-size: 6vw;
 }
 .cyan {
   margin-left: var(--CYANMARGINWIDTH);
@@ -353,8 +403,15 @@ section {
     margin-left: 0 !important;
   }
 }
-.divider {
+.goesToLeft {
+  left: 0;
+}
+.divider,
+.Divider {
   background-color: black;
+}
+.Divider {
+  height: calc(var(--DIVIDER1HEIGHT) / 2);
 }
 .greybgFiller {
   background-color: var(--grey);

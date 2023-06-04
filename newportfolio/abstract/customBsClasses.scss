@@ -12,13 +12,11 @@ $i: 10;
   }
   $i: $i + 10;
 }
-@for $i from 1 through 200 {
-  .mt-#{$i}per {
-    margin-top: #{$i}#{"%"};
-  }
-  .mb-#{$i}per {
-    margin-bottom: #{$i}#{"%"};
-  }
+.mb-5per {
+  margin-bottom: 5%;
+}
+.mt-5per {
+  margin-top: 5%;
 }
 .w-12vw-xl {
   @include minw(1199px) {
