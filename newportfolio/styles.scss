@@ -232,7 +232,7 @@ nav {
           line-height: 0.9;
           font-size: 7rem;
           @include maxw($BPxl) {
-            font-size: 13.5vw !important;
+            font-size: 12vw !important;
           }
           ::after {
             content: "";
@@ -317,7 +317,8 @@ nav {
       #place5 {
         grid-area: blank4;
       }
-      .purple3 {
+      .purple3,
+      #quoteArea {
         grid-area: summary;
         padding: 50px;
         q {
@@ -326,6 +327,7 @@ nav {
         @include maxw($BPxl) {
           padding: 5vw !important;
           border-right: 2px solid var(--grey);
+          border-left: none;
         }
       }
       .purple4 {
