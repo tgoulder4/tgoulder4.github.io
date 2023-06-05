@@ -325,9 +325,7 @@ nav {
           "blank summary blank2 blank3"
           "projectArea projectArea githubArea blank4";
         grid-template-rows: auto auto;
-        grid-template-columns: var(--GREYBLOCKWIDTH) 45vw auto var(
-            --GREYBLOCKWIDTH
-          );
+        grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH) auto;
       }
       #place1 {
         grid-area: blank;

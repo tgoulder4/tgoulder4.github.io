@@ -645,7 +645,7 @@ nav ul li a {
   #red #yellow3 .cyan2 {
     grid-template-areas: "blank summary blank2 blank3" "projectArea projectArea githubArea blank4";
     grid-template-rows: auto auto;
-    grid-template-columns: var(--GREYBLOCKWIDTH) 45vw auto var(--GREYBLOCKWIDTH);
+    grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH) auto;
   }
 }
 #red #yellow3 .cyan2 #place1 {
