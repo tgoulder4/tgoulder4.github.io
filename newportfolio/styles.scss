@@ -13,7 +13,9 @@
   justify-content: center;
   margin-top: var(--navHeight);
   z-index: 1;
-  height: 70vh;
+  height: 35vw;
+  max-height: 500px;
+  min-height: 350px;
   .cover {
     width: 100%;
     // background-color: hsl(0 0 calc(10 + calc(calc(var(--mainRevealWidth) * 100) / 100vw))); /*hsl(0,0,10 +mainRevealWidth*100/vw*/

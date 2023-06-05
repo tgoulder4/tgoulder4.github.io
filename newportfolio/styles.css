@@ -313,7 +313,9 @@
   justify-content: center;
   margin-top: var(--navHeight);
   z-index: 1;
-  height: 70vh;
+  height: 35vw;
+  max-height: 500px;
+  min-height: 350px;
 }
 #rails .cover {
   width: 100%;
