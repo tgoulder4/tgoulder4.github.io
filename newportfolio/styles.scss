@@ -38,10 +38,10 @@
     background-color: var(--secondary_colour);
     height: 1250px;
     z-index: 2;
-    animation: introduceOpacity 2s cubic-bezier(0.2, 0.01, 0.29, 0.98) forwards;
+    @include introAnimation(introduceOpacity);
   }
   #mainReveal {
-    animation: introduceWidth 2s cubic-bezier(0.2, 0.01, 0.29, 0.98) forwards;
+    @include introAnimation(introduceWidth);
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -251,6 +251,7 @@ nav {
           font-weight: 700;
           line-height: 0.9;
           font-size: 7rem;
+          width: 10%;
           @include maxw($BPxl) {
             font-size: 12vw !important;
           }
@@ -471,7 +472,7 @@ nav {
   left: 0;
 }
 .goesToRight {
-  width: calc(100% - 2 * var(--CYANMARGINWIDTH)) !important;
+  width: 87.3%;
 }
 .divider,
 .Divider {

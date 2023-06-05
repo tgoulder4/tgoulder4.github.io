@@ -569,6 +569,7 @@ nav ul li a {
   font-weight: 700;
   line-height: 0.9;
   font-size: 7rem;
+  width: 10%;
 }
 @media (max-width: 1199px) {
   #red #yellow1 #cyan #purple2 h1 {
@@ -794,7 +795,7 @@ nav ul li a {
 }
 
 .goesToRight {
-  width: calc(100% - 2 * var(--CYANMARGINWIDTH)) !important;
+  width: 87.3%;
 }
 
 .divider,
