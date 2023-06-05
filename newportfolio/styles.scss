@@ -6,6 +6,22 @@
 
 //media queries
 //end media queries
+@keyframes introduceWidth {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 100vw;
+  }
+}
+@keyframes introduceOpacity {
+  from {
+    background-color: #171717;
+  }
+  to {
+    background-color: white;
+  }
+}
 #rails {
   width: 100%;
   border-bottom: 15px solid var(--primary_colour);
@@ -22,9 +38,10 @@
     background-color: var(--secondary_colour);
     height: 1250px;
     z-index: 2;
+    animation: introduceOpacity 2s cubic-bezier(0.2, 0.01, 0.29, 0.98) forwards;
   }
   #mainReveal {
-    width: 100%;
+    animation: introduceWidth 2s cubic-bezier(0.2, 0.01, 0.29, 0.98) forwards;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -213,7 +230,10 @@ nav {
   }
   #lFiller1 {
     margin-top: var(--CYANMARGINWIDTH);
-    height: 91%;
+    height: 61%;
+    @include minw($BPxl) {
+      height: 64%;
+    }
   }
   #yellow1 {
     #cyan {
@@ -233,6 +253,9 @@ nav {
           font-size: 7rem;
           @include maxw($BPxl) {
             font-size: 12vw !important;
+          }
+          @include maxw($BPmd) {
+            font-size: 15vw !important;
           }
           ::after {
             content: "";
@@ -343,7 +366,7 @@ nav {
           font-size: 6vw;
         }
         .green2 {
-          max-width: 400px;
+          max-width: 475px;
           h2:nth-child(3) {
             color: grey;
             letter-spacing: 0.2rem;
@@ -431,6 +454,12 @@ nav {
   font-weight: 800;
   line-height: 0.9;
   font-size: 6vw;
+  @include maxw($BPxl) {
+    font-size: 8vw;
+  }
+  @include maxw($BPmd) {
+    font-size: 10vw;
+  }
 }
 .cyan {
   margin-left: var(--CYANMARGINWIDTH);
