@@ -1,6 +1,23 @@
 @import "base/reset.css";
-@import "abstract/variables.css";
 @import "abstract/colours.css";
+:root {
+  --mainRevealWidth: 100%;
+  --navHeight: 50px;
+  --vlineWidth: 0.2vh;
+  --hLineHeight: 0.2vh;
+  --lineColour: #191919;
+  --primary_colour: #191919;
+  --secondary_colour: #2f2f2f;
+  --grey: #c8c8c8;
+  --desk1Container1Width: 630px; /*at a window width 1000*/
+  --desk2Container1Width: 1031px; /*at a window width 1600*/
+  --s1TopMargin: 80px;
+  --vBlockWidth: 55px;
+  --DIVIDER1HEIGHT: 40px;
+  --CYANMARGINWIDTH: 70px;
+  --GREYBLOCKWIDTH: 150px;
+}
+
 .mt-10 {
   margin-top: 10px;
 }
@@ -443,6 +460,26 @@
   height: 36vh;
 }
 
+.greyBdr-left {
+  border-left: 2px solid var(--grey);
+}
+
+.greyBdr-right {
+  border-right: 2px solid var(--grey);
+}
+
+.greyBdr-bottom {
+  border-bottom: 2px solid var(--grey);
+}
+
+.greyBdr-top {
+  border-top: 2px solid var(--grey);
+}
+
+.greyBdr-all {
+  border: 2px solid var(--grey);
+}
+
 nav {
   height: var(--navHeight);
   background-color: var(--primary_colour);
@@ -480,6 +517,14 @@ nav ul li a {
   font-style: italic;
 }
 
+#red {
+  width: 75%;
+}
+@media (max-width: 768px) {
+  #red {
+    width: 90% !important;
+  }
+}
 #red #lFiller1 {
   margin-top: var(--CYANMARGINWIDTH);
   height: 91%;
@@ -491,7 +536,7 @@ nav ul li a {
 #red #yellow1 #cyan #purple2 {
   padding-top: var(--CYANMARGINWIDTH);
 }
-@media (min-width: 1199px) {
+@media (max-width: 1199px) {
   #red #yellow1 #cyan #purple2 {
     margin-left: 5vw !important;
   }
@@ -503,7 +548,7 @@ nav ul li a {
 }
 @media (max-width: 1199px) {
   #red #yellow1 #cyan #purple2 h1 {
-    font-size: 13vw !important;
+    font-size: 13.5vw !important;
   }
 }
 #red #yellow1 #cyan #purple2 h1 ::after {
@@ -521,6 +566,11 @@ nav ul li a {
   #red #yellow1 #cyan #purple2 h1 ::after {
     width: 72vw !important;
     height: 9vw !important;
+  }
+}
+@media (max-width: 768px) {
+  #red #yellow1 #cyan #purple2 h1 ::after {
+    display: none;
   }
 }
 #red #yellow1 #cyan #purple2 h2,
@@ -565,7 +615,7 @@ nav ul li a {
   #red #yellow3 .cyan2 {
     grid-template-areas: "blank summary blank2 blank3" "projectArea projectArea githubArea blank4";
     grid-template-rows: auto auto;
-    grid-template-columns: var(--GREYBLOCKWIDTH) 47vw auto var(--GREYBLOCKWIDTH);
+    grid-template-columns: var(--GREYBLOCKWIDTH) 45vw auto var(--GREYBLOCKWIDTH);
   }
 }
 #red #yellow3 .cyan2 #place1 {
@@ -586,6 +636,12 @@ nav ul li a {
 }
 #red #yellow3 .cyan2 .purple3 q {
   font-weight: 400;
+}
+@media (max-width: 1199px) {
+  #red #yellow3 .cyan2 .purple3 {
+    padding: 5vw !important;
+    border-right: 2px solid var(--grey);
+  }
 }
 #red #yellow3 .cyan2 .purple4 {
   grid-area: projectArea;
@@ -692,6 +748,10 @@ nav ul li a {
   left: 0;
 }
 
+.goesToRight {
+  width: calc(100% - 2 * var(--CYANMARGINWIDTH)) !important;
+}
+
 .divider,
 .Divider {
   background-color: black;
@@ -755,7 +815,7 @@ nav ul li a {
   height: 500px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1199px) {
   .minw-xl-w-100-h-100-minw-80px {
     width: 100%;
     height: 100%;
@@ -763,7 +823,7 @@ nav ul li a {
   }
 }
 
-@media (max-width: var(--XLSCREEN)) {
+@media (max-width: 1199px) {
   .maxw-xl-h-100px-w-100 {
     height: 100px;
     width: 100%;
