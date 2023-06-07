@@ -681,6 +681,11 @@ nav ul li a {
   padding: 50px;
   gap: 30px;
 }
+@media (max-width: 1199px) {
+  #red #yellow3 .cyan2 .purple4 {
+    border-right: 2px solid var(--grey);
+  }
+}
 #red #yellow3 .cyan2 .purple4 #scrollContainer {
   width: 100%;
 }

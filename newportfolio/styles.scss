@@ -356,6 +356,9 @@ nav {
         grid-area: projectArea;
         padding: 50px;
         gap: 30px;
+        @include maxw($BPxl) {
+          border-right: 2px solid var(--grey);
+        }
         #scrollContainer {
           width: 100%;
         }
