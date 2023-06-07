@@ -261,12 +261,12 @@ nav {
           ::after {
             content: "";
             position: absolute;
-            top: 0;
             top: 10px;
-            left: -29px;
-            width: 650px;
+            left: -18px;
+            width: 626px;
             height: 79px;
             z-index: -1;
+
             @include maxw($BPxl) {
               width: 72vw !important;
               height: 9vw !important;
@@ -426,26 +426,103 @@ nav {
         "leftBlank aboutMe rightBlank"
         "leftBlank areaSkillSet rightBlank"
         "leftBlank middleBlank rightBlank";
-      grid-template-rows: 30vw auto 15vw;
+      grid-template-rows: auto auto auto;
       grid-template-columns: var(--CYANMARGINWIDTH) auto var(--CYANMARGINWIDTH);
     }
     #bl1 {
       grid-area: leftBlank;
+      outline: 2px solid rgb(238, 16, 16);
     }
     #bl2 {
       grid-area: middleBlank;
+      outline: 2px solid rgb(238, 16, 16);
+      height: 50px;
     }
     #bl3 {
       grid-area: rightBlank;
+      outline: 2px solid rgb(238, 16, 16);
     }
     #titleArea {
       grid-area: aboutMe;
-      padding-top: 50px;
+      padding-top: 80px;
       padding-left: 50px;
+      outline: 2px solid rgb(238, 16, 16);
+      h2 {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 87px;
+          left: 34px;
+          width: 43vw;
+          height: 5.8vw;
+          z-index: -1;
+          background-color: var(--grey);
+          @include minw($BPxl) {
+            width: 33vw;
+            height: 4.2vw;
+          }
+        }
+      }
     }
     #skillSetArea {
       grid-area: areaSkillSet;
+      outline: 2px solid rgb(238, 16, 16);
+      .anotherQuote {
+        padding: 50px;
+        flex-basis: 50%;
+      }
+      .myEvolvingSkillset {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        flex-basis: 50%;
+        h3 {
+          font-size: 1rem;
+          white-space: nowrap;
+        }
+        .skillSetContainer {
+          outline: 2px solid purple;
+          height: 100%;
+          .icons {
+            outline: 2px solid green;
+            i {
+              font-size: 350%;
+            }
+          }
+          .cert {
+            outline: 2px solid green;
+            border: 2px solid #c1c1c1;
+            background-color: #f1f1f1;
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            h3 {
+              color: black;
+              em {
+                font-weight: bold;
+                font-style: normal;
+                text-align: center;
+              }
+            }
+            i {
+              &::before {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+      }
     }
+  }
+  #contactMeSection {
+    display: grid;
+    grid-template-areas:
+      "leftBlank contactMe rightBlank"
+      "leftBlank personalDetails rightBlank";
+    outline: 2px solid rgb(238, 16, 16);
   }
 }
 #projectArea h2,

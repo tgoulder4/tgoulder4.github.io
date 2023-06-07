@@ -584,10 +584,9 @@ nav ul li a {
 #red #yellow1 #cyan #purple2 h1 ::after {
   content: "";
   position: absolute;
-  top: 0;
   top: 10px;
-  left: -29px;
-  width: 650px;
+  left: -18px;
+  width: 626px;
   height: 79px;
   z-index: -1;
   background-color: var(--grey);
@@ -741,25 +740,97 @@ nav ul li a {
 #red #yellow4 #aboutMeSection {
   display: grid;
   grid-template-areas: "leftBlank aboutMe rightBlank" "leftBlank areaSkillSet rightBlank" "leftBlank middleBlank rightBlank";
-  grid-template-rows: 30vw auto 15vw;
+  grid-template-rows: auto auto auto;
   grid-template-columns: var(--CYANMARGINWIDTH) auto var(--CYANMARGINWIDTH);
 }
 #red #yellow4 #bl1 {
   grid-area: leftBlank;
+  outline: 2px solid rgb(238, 16, 16);
 }
 #red #yellow4 #bl2 {
   grid-area: middleBlank;
+  outline: 2px solid rgb(238, 16, 16);
+  height: 50px;
 }
 #red #yellow4 #bl3 {
   grid-area: rightBlank;
+  outline: 2px solid rgb(238, 16, 16);
 }
 #red #yellow4 #titleArea {
   grid-area: aboutMe;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-left: 50px;
+  outline: 2px solid rgb(238, 16, 16);
+}
+#red #yellow4 #titleArea h2::after {
+  content: "";
+  position: absolute;
+  top: 87px;
+  left: 34px;
+  width: 43vw;
+  height: 5.8vw;
+  z-index: -1;
+  background-color: var(--grey);
+}
+@media (min-width: 1199px) {
+  #red #yellow4 #titleArea h2::after {
+    width: 33vw;
+    height: 4.2vw;
+  }
 }
 #red #yellow4 #skillSetArea {
   grid-area: areaSkillSet;
+  outline: 2px solid rgb(238, 16, 16);
+}
+#red #yellow4 #skillSetArea .anotherQuote {
+  padding: 50px;
+  flex-basis: 50%;
+}
+#red #yellow4 #skillSetArea .myEvolvingSkillset {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-basis: 50%;
+}
+#red #yellow4 #skillSetArea .myEvolvingSkillset h3 {
+  font-size: 1rem;
+  white-space: nowrap;
+}
+#red #yellow4 #skillSetArea .myEvolvingSkillset .skillSetContainer {
+  outline: 2px solid purple;
+  height: 100%;
+}
+#red #yellow4 #skillSetArea .myEvolvingSkillset .skillSetContainer .icons {
+  outline: 2px solid green;
+}
+#red #yellow4 #skillSetArea .myEvolvingSkillset .skillSetContainer .icons i {
+  font-size: 350%;
+}
+#red #yellow4 #skillSetArea .myEvolvingSkillset .skillSetContainer .cert {
+  outline: 2px solid green;
+  border: 2px solid #c1c1c1;
+  background-color: #f1f1f1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#red #yellow4 #skillSetArea .myEvolvingSkillset .skillSetContainer .cert h3 {
+  color: black;
+}
+#red #yellow4 #skillSetArea .myEvolvingSkillset .skillSetContainer .cert h3 em {
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+#red #yellow4 #skillSetArea .myEvolvingSkillset .skillSetContainer .cert i::before {
+  font-size: 2rem;
+}
+#red #contactMeSection {
+  display: grid;
+  grid-template-areas: "leftBlank contactMe rightBlank" "leftBlank personalDetails rightBlank";
+  outline: 2px solid rgb(238, 16, 16);
 }
 
 #projectArea h2,
