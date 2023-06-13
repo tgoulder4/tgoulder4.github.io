@@ -15,6 +15,20 @@
   --CYANMARGINWIDTH: 70px;
   --GREYBLOCKWIDTH: 150px;
 }
-$BPmd: 768px;
-$BPxl: 1199px;
-$projectCardSeparation: 4px;
+
+#contentS2 #projectArea #projectCards {
+  row-gap: 4px;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+}
+#contentS2 #projectArea #projectCards .secondAndThirdProjectContainer {
+  width: 100%;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+}
+@media (min-width: 768px) {
+  #contentS2 #projectArea #projectCards .secondAndThirdProjectContainer {
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}/*# sourceMappingURL=projectSection.css.map */
