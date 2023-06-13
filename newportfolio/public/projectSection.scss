@@ -1,0 +1,10 @@
+@import "../abstract/mixins.scss";
+.projectContainer {
+  width: 100%;
+  column-gap: 20px;
+  @include minw($BPmd) {
+    column-gap: 0;
+  }
+
+  //min width md set column-gap to 0, other than that set to 20px
+}
