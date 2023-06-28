@@ -28,7 +28,7 @@
 }
 @media (min-width: 768px) {
   #contentS2 #projectArea #projectCards .secondAndThirdProjectContainer {
-    -moz-column-gap: 0;
-         column-gap: 0;
+    -moz-column-gap: 4px;
+         column-gap: 4px;
   }
-}/*# sourceMappingURL=projectSection.css.map */
+}

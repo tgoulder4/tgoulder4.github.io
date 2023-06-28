@@ -1,11 +1,11 @@
-@import "base/reset.css";
-@import "abstract/variables.scss";
-@import "abstract/mixins.scss";
-@import "abstract/customBsClasses.scss";
-@import "abstract/colours.css";
-@import "public/header.css";
-@import "public/fanaticalSection.scss";
-@import "public/projectSection.scss";
+@import "../dist/reset.css";
+@import "../abstract/variables.scss";
+@import "../abstract/mixins.scss";
+@import "../abstract/customBsClasses.scss";
+@import "../abstract/colours.css";
+@import "../dist/header.css";
+@import "fanaticalSection.scss";
+@import "projectSection.scss";
 //media queries
 //end media queries
 @keyframes introduceWidth {

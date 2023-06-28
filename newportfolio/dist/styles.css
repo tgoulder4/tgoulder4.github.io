@@ -1,6 +1,6 @@
-@import "base/reset.css";
-@import "abstract/colours.css";
-@import "public/header.css";
+@import "../dist/reset.css";
+@import "../abstract/colours.css";
+@import "../dist/header.css";
 :root {
   --mainRevealWidth: 100%;
   --navHeight: 50px;
@@ -311,15 +311,38 @@
   line-height: 0.9;
 }
 
-.projectContainer {
+:root {
+  --mainRevealWidth: 100%;
+  --navHeight: 50px;
+  --vlineWidth: 0.2vh;
+  --hLineHeight: 0.2vh;
+  --lineColour: #191919;
+  --primary_colour: #191919;
+  --secondary_colour: #2f2f2f;
+  --grey: #c8c8c8;
+  --desk1Container1Width: 630px; /*at a window width 1000*/
+  --desk2Container1Width: 1031px; /*at a window width 1600*/
+  --s1TopMargin: 80px;
+  --vBlockWidth: 55px;
+  --DIVIDER1HEIGHT: 40px;
+  --CYANMARGINWIDTH: 70px;
+  --GREYBLOCKWIDTH: 150px;
+}
+
+#contentS2 #projectArea #projectCards {
+  row-gap: 4px;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+}
+#contentS2 #projectArea #projectCards .secondAndThirdProjectContainer {
   width: 100%;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
 }
 @media (min-width: 768px) {
-  .projectContainer {
-    -moz-column-gap: 0;
-         column-gap: 0;
+  #contentS2 #projectArea #projectCards .secondAndThirdProjectContainer {
+    -moz-column-gap: 4px;
+         column-gap: 4px;
   }
 }
 
@@ -829,4 +852,4 @@ nav ul li a {
 
 .h-800px {
   height: 800px;
-}/*# sourceMappingURL=styles.css.map */
+}

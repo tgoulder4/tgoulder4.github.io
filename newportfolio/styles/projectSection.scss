@@ -9,7 +9,7 @@
         width: 100%;
         column-gap: $projectCardSeparation;
         @include minw($BPmd) {
-          column-gap: 0;
+          column-gap: $projectCardSeparation;
         }
       }
     }
