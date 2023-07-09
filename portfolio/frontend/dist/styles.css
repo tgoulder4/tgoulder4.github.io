@@ -726,11 +726,6 @@ nav ul li a {
   font-weight: 700;
   margin-bottom: 2px;
 }
-#red #yellow3 .cyan2 .purple4 .green3 .projectCard summary .btn-info {
-  background-color: black !important;
-  color: white !important;
-  max-width: 120px;
-}
 #red #yellow3 .cyan2 .githubWrapper {
   grid-area: githubArea;
 }
