@@ -2,9 +2,11 @@
   "dependencies": {
     "create-react-app": "^5.0.1",
     "express": "^4.18.2",
-    "global": "^4.4.0"
+    "global": "^4.4.0",
+    "tailwindcss": "^3.3.2"
   },
   "scripts": {
-    "start": "node ./backend/server.js"
+    "startBack": "node ./backend/server.js",
+    "startFront": "react-scripts start"
   }
 }

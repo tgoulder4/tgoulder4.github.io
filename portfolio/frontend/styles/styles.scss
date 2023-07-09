@@ -2,7 +2,7 @@
 @import "../abstract/variables.scss";
 @import "../abstract/mixins.scss";
 @import "../abstract/customBsClasses.scss";
-@import "../abstract/colours.css";
+@import "../dist/colours.css";
 @import "../dist/header.css";
 @import "fanaticalSection.scss";
 @import "projectSection.scss";
@@ -210,9 +210,10 @@ nav {
   }
   #lFiller1 {
     margin-top: var(--CYANMARGINWIDTH);
-    height: 61%;
-    @include minw($BPxl) {
-      height: 64%;
+    height: 155vh;
+    @include maxw($BPmd) {
+      height: 163vh;
+      max-height: 1510px;
     }
   }
   #yellow1 {
@@ -368,7 +369,7 @@ nav {
             min-width: 32%;
             .imgFiller {
               background-color: var(--grey);
-              flex-grow: 3;
+              height: 100%;
             }
             summary {
               padding: 0.8rem;
