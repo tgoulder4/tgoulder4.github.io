@@ -352,6 +352,9 @@
   height: 310px;
   margin: 0 auto;
 }
+#shapeshift #shapeShift-container {
+  background-color: var(--primary_colour);
+}
 
 #topPart {
   display: flex;

@@ -563,6 +563,10 @@ main {
   margin: 0 auto;
 }
 
+#shapeshift #shapeShift-container {
+  background-color: var(--primary_colour);
+}
+
 #topPart {
   display: flex;
   flex-direction: row;
