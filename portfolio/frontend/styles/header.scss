@@ -87,14 +87,13 @@
       #shapeShift-container {
         display: flex;
         align-items: center;
-        height: 36vh;
+        height: 100%;
         animation: adjustHeight 20s infinite;
 
         #shapeShift {
           @media (max-height: 600px) {
             height: 170px !important;
           }
-          width: 100%;
           background-color: var(--primary_colour);
           .block {
             background-color: white;

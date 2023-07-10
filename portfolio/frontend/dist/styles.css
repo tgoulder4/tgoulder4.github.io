@@ -346,14 +346,13 @@
   }
 }
 
-#shapeshift {
+#shapeShift-container {
+  background-color: var(--primary_colour);
+}
+#shapeShift-container #shapeshift {
   position: relative;
-  width: 300px;
   height: 310px;
   margin: 0 auto;
-}
-#shapeshift #shapeShift-container {
-  background-color: var(--primary_colour);
 }
 
 #topPart {
@@ -401,30 +400,30 @@
   20% {
     /*State 1*/
     top: 50%;
-    height: 55px;
+    height: 21.8%;
   }
   40% {
     /*State 2*/
-    height: 252px;
+    height: 100%;
     top: 70px;
     left: calc(50% - 27.5px);
   }
   60% {
     /*State 3*/
     left: calc(100% - 55px);
-    height: 55px;
+    height: 21.8%;
     top: 50%;
   }
   80% {
     /*State 4*/
     left: calc(100% - 55px);
     top: 50%;
-    height: 55px;
+    height: 21.8%;
   }
   81% {
     /*Reset back to original*/
     top: 70px;
-    height: 252px;
+    height: 100%;
   }
 }
 .block {
@@ -604,7 +603,10 @@ nav ul li a {
 }
 #red #yellow1 #cyan #purple2 h2,
 #red #yellow1 #cyan #purple2 h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+#red #yellow1 #cyan #purple2 h3:nth-child(1) {
+  color: gray;
 }
 #red #yellow1 #cyan #purple2 em {
   font-weight: 800;
@@ -667,9 +669,10 @@ nav ul li a {
   grid-area: summary;
   padding: 50px;
 }
-#red #yellow3 .cyan2 .purple3 q,
-#red #yellow3 .cyan2 #quoteArea q {
+#red #yellow3 .cyan2 .purple3 p,
+#red #yellow3 .cyan2 #quoteArea p {
   font-weight: 400;
+  font-size: 1.3rem;
 }
 @media (max-width: 1199px) {
   #red #yellow3 .cyan2 .purple3,
@@ -704,6 +707,9 @@ nav ul li a {
   color: grey;
   letter-spacing: 0.2rem;
 }
+#red #yellow3 .cyan2 .purple4 .green2 .legend {
+  font-size: 1.3rem;
+}
 #red #yellow3 .cyan2 .purple4 .green2 .legend p:nth-child(2) {
   text-decoration: underline;
 }
@@ -725,6 +731,10 @@ nav ul li a {
 #red #yellow3 .cyan2 .purple4 .green3 .projectCard summary h3 {
   font-weight: 700;
   margin-bottom: 2px;
+}
+#red #yellow3 .cyan2 .purple4 .green3 .projectCard summary .btn-info {
+  background-color: black !important;
+  color: white !important;
 }
 #red #yellow3 .cyan2 .githubWrapper {
   grid-area: githubArea;
@@ -832,25 +842,67 @@ nav ul li a {
 }
 #red #contactMeSection {
   display: grid;
-  grid-template-areas: "leftBlank contactMe rightBlank" "leftBlank personalDetails rightBlank";
+  grid-template-areas: "leftBlank contactMe rightBlank" "leftBlank2 personalDetails rightBlank";
+  outline: 2px solid rgb(238, 16, 16);
+  grid-template-columns: var(--CYANMARGINWIDTH) auto var(--CYANMARGINWIDTH);
+  grid-template-rows: auto auto;
+}
+#red #contactMeSection #titleArea {
+  grid-area: contactMe;
+  outline: 2px solid rgb(238, 16, 16);
+  padding-top: 80px;
+  padding-left: 50px;
+}
+#red #contactMeSection #titleArea::after {
+  content: "";
+  position: absolute;
+  top: 87px;
+  left: 34px;
+  width: 40vw;
+  height: 4.2vw;
+  z-index: -1;
+  background-color: var(--grey);
+}
+@media (max-width: 768px) {
+  #red #contactMeSection #titleArea::after {
+    width: 53vw;
+    height: 6vw;
+  }
+}
+#red #contactMeSection .contactElement {
+  width: 160px;
+}
+#red #contactMeSection #bl1 {
+  grid-area: leftBlank;
+  outline: 2px solid rgb(238, 16, 16);
+}
+#red #contactMeSection #bl2 {
+  grid-area: rightBlank;
+  outline: 2px solid rgb(238, 16, 16);
+}
+#red #contactMeSection #bl3 {
+  grid-area: leftBlank2;
   outline: 2px solid rgb(238, 16, 16);
 }
 
 #projectArea h2,
-#aboutMeSection h2 {
+#aboutMeSection h2,
+#contactMeSection h2 {
   font-weight: 800;
   line-height: 0.9;
   font-size: 6vw;
 }
 @media (max-width: 1199px) {
   #projectArea h2,
-  #aboutMeSection h2 {
+  #aboutMeSection h2,
+  #contactMeSection h2 {
     font-size: 8vw;
   }
 }
 @media (max-width: 768px) {
   #projectArea h2,
-  #aboutMeSection h2 {
+  #aboutMeSection h2,
+  #contactMeSection h2 {
     font-size: 10vw;
   }
 }

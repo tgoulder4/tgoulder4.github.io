@@ -10,14 +10,13 @@
 //end media queries
 ////////////////////////////////////////
 ///
-#shapeshift {
+#shapeShift-container {
+  background-color: var(--primary_colour);
   //try that or #shapeshift
-  position: relative;
-  width: 300px;
-  height: 310px;
-  margin: 0 auto;
-  #shapeShift-container {
-    background-color: var(--primary_colour);
+  #shapeshift {
+    position: relative;
+    height: 310px;
+    margin: 0 auto;
   }
 }
 #topPart {
@@ -75,30 +74,30 @@
   20% {
     /*State 1*/
     top: 50%;
-    height: 55px;
+    height: 21.8%;
   }
   40% {
     /*State 2*/
-    height: 252px;
+    height: 100%;
     top: 70px;
     left: calc(50% - 27.5px);
   }
   60% {
     /*State 3*/
     left: calc(100% - 55px);
-    height: 55px;
+    height: 21.8%;
     top: 50%;
   }
   80% {
     /*State 4*/
     left: calc(100% - 55px);
     top: 50%;
-    height: 55px;
+    height: 21.8%;
   }
   81% {
     /*Reset back to original*/
     top: 70px;
-    height: 252px;
+    height: 100%; //252 is 100%
   }
 }
 
@@ -263,7 +262,10 @@ nav {
         }
         h2,
         h3 {
-          font-size: 1rem;
+          font-size: 1.2rem;
+        }
+        h3:nth-child(1) {
+          color: gray;
         }
         em {
           font-weight: 800;
@@ -330,8 +332,9 @@ nav {
       #quoteArea {
         grid-area: summary;
         padding: 50px;
-        q {
+        p {
           font-weight: 400;
+          font-size: 1.3rem;
         }
         @include maxw($BPxl) {
           padding: 5vw !important;
@@ -364,6 +367,7 @@ nav {
             p:nth-child(2) {
               text-decoration: underline;
             }
+            font-size: 1.3rem;
           }
         }
         .green3 {
@@ -383,6 +387,10 @@ nav {
               h3 {
                 font-weight: 700;
                 margin-bottom: 2px;
+              }
+              .btn-info {
+                background-color: black !important;
+                color: white !important;
               }
             }
           }
@@ -506,12 +514,51 @@ nav {
     display: grid;
     grid-template-areas:
       "leftBlank contactMe rightBlank"
-      "leftBlank personalDetails rightBlank";
+      "leftBlank2 personalDetails rightBlank";
     outline: 2px solid rgb(238, 16, 16);
+    grid-template-columns: var(--CYANMARGINWIDTH) auto var(--CYANMARGINWIDTH);
+    grid-template-rows: auto auto;
+    #titleArea {
+      grid-area: contactMe;
+      outline: 2px solid rgb(238, 16, 16);
+      padding-top: 80px;
+      padding-left: 50px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 87px;
+        left: 34px;
+        width: 40vw;
+        height: 4.2vw;
+        @include maxw($BPmd) //NOT WORKING
+ {
+          width: 53vw;
+          height: 6vw;
+        }
+        z-index: -1;
+        background-color: var(--grey);
+      }
+    }
+    .contactElement {
+      width: 160px;
+    }
+    #bl1 {
+      grid-area: leftBlank;
+      outline: 2px solid rgb(238, 16, 16);
+    }
+    #bl2 {
+      grid-area: rightBlank;
+      outline: 2px solid rgb(238, 16, 16);
+    }
+    #bl3 {
+      grid-area: leftBlank2;
+      outline: 2px solid rgb(238, 16, 16);
+    }
   }
 }
 #projectArea h2,
-#aboutMeSection h2 {
+#aboutMeSection h2,
+#contactMeSection h2 {
   font-weight: 800;
   line-height: 0.9;
   font-size: 6vw;
