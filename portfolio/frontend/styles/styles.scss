@@ -234,7 +234,7 @@ nav {
         h1 {
           font-weight: 700;
           line-height: 0.9;
-          font-size: 8.5rem;
+          font-size: 9.5vw;
           width: 10%;
           @include maxw($BPxl) {
             font-size: 12vw !important;
@@ -247,8 +247,8 @@ nav {
             position: absolute;
             top: 10px;
             left: -18px;
-            width: 626px;
-            height: 79px;
+            width: 53vw;
+            height: 10vh;
             z-index: -1;
 
             @include maxw($BPxl) {
