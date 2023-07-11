@@ -77,7 +77,7 @@
             <div id="shapeShift-container" class="flex justify-center p-[50px]">
               <!--shapeshift group-->
               <div id="shapeShift" class="h-100 relative w-[300px]">
-                <div id="topPart">
+                <div id="topPart" class="flex justify-between">
                   <div class="block" id="leftBlock"></div>
                   <div class="block" id="rightBlock"></div>
                 </div>
@@ -248,7 +248,7 @@
                   >
                     <div class="legend d-flex justify-content-between">
                       <p>TOP 3</p>
-                      <p>View all</p>
+                      <!-- <p>View all</p> -->
                     </div>
                     <h2>PROJECTS</h2>
                     <h2>//////////////////</h2>
@@ -279,51 +279,46 @@
                       </summary>
                     </div>
                     <div
-                      id="secondAndThirdProjectContainer"
-                      class="secondAndThirdProjectContainer d-flex"
+                      class="projectCard w-100 d-flex flex-column greyBdr-all"
                     >
-                      <div
-                        class="projectCard w-100 d-flex flex-column greyBdr-all"
+                      <!-- <img src="" alt=""> -->
+                      <div class="imgFiller"></div>
+                      <summary
+                        class="d-flex flex-column justify-between align-items-end h-full"
                       >
-                        <!-- <img src="" alt=""> -->
-                        <div class="imgFiller"></div>
-                        <summary
-                          class="d-flex flex-column justify-between align-items-end h-full"
-                        >
-                          <div class="titleDesc w-100">
-                            <h3 class="title">HouseHop</h3>
-                            <p class="description">Find Perfect Roomates</p>
+                        <div class="titleDesc w-100">
+                          <h3 class="title">HouseHop</h3>
+                          <p class="description">Find Perfect Roomates</p>
+                        </div>
+                        <div class="d-flex gap-1">
+                          <div
+                            class="btn btn-info bg-zinc-700 border-black hover:bg-zinc-950"
+                          >
+                            View
                           </div>
-                          <div class="d-flex gap-1">
-                            <div
-                              class="btn btn-info bg-zinc-700 border-black hover:bg-zinc-950"
-                            >
-                              View
-                            </div>
-                          </div>
-                        </summary>
-                      </div>
-                      <div
-                        class="projectCard w-100 d-flex flex-column greyBdr-all"
+                        </div>
+                      </summary>
+                    </div>
+                    <div
+                      class="projectCard w-100 d-flex flex-column greyBdr-all"
+                    >
+                      <!-- <img src="" alt=""> -->
+                      <div class="imgFiller"></div>
+                      <summary
+                        class="d-flex flex-column justify-between align-items-end h-full"
                       >
-                        <!-- <img src="" alt=""> -->
-                        <div class="imgFiller"></div>
-                        <summary
-                          class="d-flex flex-column justify-between align-items-end h-full"
-                        >
-                          <div class="titleDesc w-100">
-                            <h3 class="title">Vector</h3>
-                            <p class="description">Effortless Learning</p>
+                        <div class="titleDesc w-100">
+                          <h3 class="title">Vector</h3>
+                          <p class="description">Effortless Learning</p>
+                        </div>
+                        <div class="d-flex gap-1">
+                          <div
+                            class="btn btn-info bg-zinc-700 border-black hover:bg-zinc-950"
+                          >
+                            View
                           </div>
-                          <div class="d-flex gap-1">
-                            <div
-                              class="btn btn-info bg-zinc-700 border-black hover:bg-zinc-950"
-                            >
-                              View
-                            </div>
-                          </div>
-                        </summary>
-                      </div>
+                        </div>
+                      </summary>
                     </div>
                   </div>
                 </div>
@@ -359,33 +354,37 @@
         <div class="filler relative goesToRight" id="secondFiller"></div>
 
         <!-- CURRENT -->
+        <div class="fillerContainer">
+          <div class="Rfiller absolute"></div>
+        </div>
         <section class="analysis analysis-Yellow" id="yellow4">
           <div id="aboutMeSection" class="analysis analysis-Cyan cyan3">
-            <div id="bl1"></div>
-            <div id="bl2"></div>
-            <div id="bl3" class="greyBdr-right"></div>
-            <div id="titleArea" class="d-flex position-relative">
+            <div id="bl1" class="greyBdr-right"></div>
+            <div id="bl2" class="greyBdr-top"></div>
+            <div id="bl3" class="greyBdr-left greyBdr-right"></div>
+            <div
+              id="titleArea"
+              class="d-flex pb-[30px] position-relative greyBdr-bottom"
+            >
               <h2>ABOUT ME</h2>
             </div>
             <div
               id="skillSetArea"
               class="d-flex flex-column text-xl flex-lg-row"
             >
-              <div
-                class="myEvolvingSkillset rounded-lg border-2 border-gray-500"
-              >
+              <div class="myEvolvingSkillset p-[50px]">
                 <!-- Item -->
-                <div class="flex justify-between space-x-6 items-center p-6">
+                <div class="flex justify-between space-x-6 items-center pb-6">
                   <div class="flex items-center space-x-4">
                     <div class="flex flex-col space-y-2">
-                      <span class="font-bold">A-Level Computer Science</span>
+                      <span class="font-bold">Computer Science</span>
                       <span
                         >GRADE: <span class="font-bold">A* (HIGHEST)</span>
                       </span>
                     </div>
                   </div>
                   <i
-                    class="fa-solid fa-network-wired text-5xl"
+                    class="fa-solid fa-network-wired text-3xl"
                     style="color: #000000"
                   ></i>
                 </div>
@@ -393,39 +392,40 @@
 
                 <!-- Item -->
                 <div
-                  class="flex justify-between border-y-2 border-gray-500 space-x-6 items-center p-6"
+                  class="flex justify-between border-y-2 border-[#c8c8c8] space-x-6 items-center py-6"
                 >
                   <div class="flex items-center space-x-4">
                     <div class="flex flex-col space-y-2">
-                      <span class="font-bold">A-Level Maths</span>
+                      <span class="font-bold">Mathematics</span>
                       <span
                         >GRADE: <span class="font-bold">A* (HIGHEST)</span>
                       </span>
                     </div>
                   </div>
                   <i
-                    class="fa-solid fa-square-root-variable text-5xl"
+                    class="fa-solid fa-square-root-variable text-3xl"
                     style="color: #000000"
                   ></i>
                 </div>
                 <!-- Item -->
 
                 <!-- Item -->
-                <div class="flex justify-between space-x-6 items-center p-6">
+                <div class="flex justify-between space-x-6 items-center py-6">
                   <div class="flex items-center space-x-4">
                     <div class="flex flex-col space-y-2">
-                      <span class="font-bold">A-Level Physics</span>
+                      <span class="font-bold">Physics</span>
                       <span>GRADE: B </span>
                     </div>
                   </div>
                   <i
-                    class="fa-solid fa-atom text-5xl"
+                    class="fa-solid fa-atom text-3xl"
                     style="color: #000000"
                   ></i>
                 </div>
                 <!-- Item -->
+                <i>My A-Level grades</i>
               </div>
-              <div class="anotherQuote greyBdr-left">
+              <div class="anotherQuote greyBdr-left p-[50px]">
                 <i class="fa-sharp fa-solid fa-quote-left"></i>
                 <p>
                   I excel in problem-solving and attention to detail, gained
@@ -444,22 +444,28 @@
           class="analysis analysis-Yellow yellow5 grid"
           id="contactMeSection"
         >
-          <div id="bl1"></div>
-          <div id="bl2"></div>
+          <div id="bl1" class="greyBdr-right"></div>
+          <div id="bl2" class="greyBdr-left greyBdr-right"></div>
           <div id="bl3" class="greyBdr-right"></div>
-          <div id="titleArea" class="d-flex position-relative">
+          <div
+            id="titleArea"
+            class="d-flex pb-[30px] position-relative greyBdr-bottom"
+          >
             <h2>CONTACT ME</h2>
           </div>
-          <summary id="details" class="flex justify-between text-xl p-[80px]">
-            <div class="contactElement flex justify-between">
+          <summary
+            id="details"
+            class="flex justify-between text-xl px-[50px] py-[15px] pb-[50px]"
+          >
+            <div class="contactElement flex flex-column justify-between">
               <i class="fa-solid fa-phone" style="color: #000000"></i>
               <div id="phone">07342159087</div>
             </div>
-            <div class="contactElement flex justify-between">
+            <div class="contactElement flex flex-column justify-between">
               <i class="fa-solid fa-envelope" style="color: #000000"></i>
               <div id="email">tcjgoulder@gmail.com</div>
             </div>
-            <div class="contactElement flex justify-between">
+            <div class="contactElement flex flex-column justify-between">
               <i class="fa-brands fa-linkedin" style="color: #000000"></i>
               <a
                 href="https://www.linkedin.com/in/tye-goulder-2b59b4256/"

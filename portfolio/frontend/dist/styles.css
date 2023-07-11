@@ -3,7 +3,7 @@
 @import "../dist/header.css";
 :root {
   --mainRevealWidth: 100%;
-  --navHeight: 50px;
+  --navHeight: 60px;
   --vlineWidth: 0.2vh;
   --hLineHeight: 0.2vh;
   --lineColour: #191919;
@@ -14,6 +14,7 @@
   --desk2Container1Width: 1031px; /*at a window width 1600*/
   --s1TopMargin: 80px;
   --vBlockWidth: 55px;
+  --HorizBlockHeight: 45px;
   --DIVIDER1HEIGHT: 40px;
   --CYANMARGINWIDTH: 70px;
   --GREYBLOCKWIDTH: 150px;
@@ -313,7 +314,7 @@
 
 :root {
   --mainRevealWidth: 100%;
-  --navHeight: 50px;
+  --navHeight: 60px;
   --vlineWidth: 0.2vh;
   --hLineHeight: 0.2vh;
   --lineColour: #191919;
@@ -324,6 +325,7 @@
   --desk2Container1Width: 1031px; /*at a window width 1600*/
   --s1TopMargin: 80px;
   --vBlockWidth: 55px;
+  --HorizBlockHeight: 45px;
   --DIVIDER1HEIGHT: 40px;
   --CYANMARGINWIDTH: 70px;
   --GREYBLOCKWIDTH: 150px;
@@ -361,7 +363,7 @@
   justify-content: space-between;
   position: absolute;
   left: 0;
-  width: 300px;
+  width: 100%;
   animation: ssTopBlocksMoveDown cubic-bezier(0.075, 0.82, 0.165, 1) 10s infinite;
 }
 
@@ -410,13 +412,13 @@
   }
   60% {
     /*State 3*/
-    left: calc(100% - 55px);
+    left: calc(100% - var(--HorizBlockHeight));
     height: 21.8%;
     top: 50%;
   }
   80% {
     /*State 4*/
-    left: calc(100% - 55px);
+    left: calc(100% - var(--HorizBlockHeight));
     top: 50%;
     height: 21.8%;
   }
@@ -428,6 +430,7 @@
 }
 .block {
   background-color: white;
+  box-shadow: inset 0px 4px 2px 0px rgb(179, 179, 179);
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -436,7 +439,7 @@
 #leftBlock,
 #rightBlock {
   width: calc(50% - 1px);
-  height: 55px;
+  height: var(--HorizBlockHeight);
   animation: ssGap cubic-bezier(0.075, 0.82, 0.165, 1) 10s infinite;
   /*animation: ssTop cubic-bezier(0.075, 0.82, 0.165, 1) 10s infinite;*/
 }
@@ -452,8 +455,8 @@
 #bottomBlock {
   top: 70px;
   left: calc(48% - 22.25px);
-  width: 55px;
-  height: 252px;
+  width: var(--HorizBlockHeight);
+  height: 100%;
   animation: middleBlockShortens cubic-bezier(0.075, 0.82, 0.165, 1) 10s infinite;
 }
 
@@ -504,7 +507,7 @@ nav {
 }
 nav ul {
   color: white;
-  margin: 2.5vw;
+  margin: 1.5vw;
   list-style: none;
 }
 nav ul li a {
@@ -605,7 +608,7 @@ nav ul li a {
 #red #yellow1 #cyan #purple2 h3 {
   font-size: 1.2rem;
 }
-#red #yellow1 #cyan #purple2 h3:nth-child(1) {
+#red #yellow1 #cyan #purple2 h3:nth-child(4) {
   color: gray;
 }
 #red #yellow1 #cyan #purple2 em {
@@ -649,7 +652,7 @@ nav ul li a {
   #red #yellow3 .cyan2 {
     grid-template-areas: "blank summary blank2 blank3" "projectArea projectArea githubArea blank4";
     grid-template-rows: auto auto;
-    grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH) auto;
+    grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH);
   }
 }
 #red #yellow3 .cyan2 #place1 {
@@ -754,26 +757,22 @@ nav ul li a {
   display: grid;
   grid-template-areas: "leftBlank aboutMe rightBlank" "leftBlank areaSkillSet rightBlank" "leftBlank middleBlank rightBlank";
   grid-template-rows: auto auto auto;
-  grid-template-columns: var(--CYANMARGINWIDTH) auto var(--CYANMARGINWIDTH);
+  grid-template-columns: var(--CYANMARGINWIDTH) auto var(--GREYBLOCKWIDTH);
 }
 #red #yellow4 #bl1 {
   grid-area: leftBlank;
-  outline: 2px solid rgb(238, 16, 16);
 }
 #red #yellow4 #bl2 {
   grid-area: middleBlank;
-  outline: 2px solid rgb(238, 16, 16);
   height: 50px;
 }
 #red #yellow4 #bl3 {
   grid-area: rightBlank;
-  outline: 2px solid rgb(238, 16, 16);
 }
 #red #yellow4 #titleArea {
   grid-area: aboutMe;
   padding-top: 80px;
   padding-left: 50px;
-  outline: 2px solid rgb(238, 16, 16);
 }
 #red #yellow4 #titleArea h2::after {
   content: "";
@@ -793,17 +792,11 @@ nav ul li a {
 }
 #red #yellow4 #skillSetArea {
   grid-area: areaSkillSet;
-  outline: 2px solid rgb(238, 16, 16);
 }
 #red #yellow4 #skillSetArea .anotherQuote {
-  padding: 50px;
   flex-basis: 50%;
 }
 #red #yellow4 #skillSetArea .myEvolvingSkillset {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 50px;
-  padding-right: 50px;
   flex-basis: 50%;
 }
 #red #yellow4 #skillSetArea .myEvolvingSkillset h3 {
@@ -840,16 +833,21 @@ nav ul li a {
 #red #yellow4 #skillSetArea .myEvolvingSkillset .skillSetContainer .cert i::before {
   font-size: 2rem;
 }
+#red .fillerContainer .Rfiller {
+  margin-top: var(--CYANMARGINWIDTH);
+  right: 0;
+  width: calc(12.5vw - var(--CYANMARGINWIDTH));
+  background-color: black;
+  height: calc(68vw - var(--CYANMARGINWIDTH));
+}
 #red #contactMeSection {
   display: grid;
   grid-template-areas: "leftBlank contactMe rightBlank" "leftBlank2 personalDetails rightBlank";
-  outline: 2px solid rgb(238, 16, 16);
-  grid-template-columns: var(--CYANMARGINWIDTH) auto var(--CYANMARGINWIDTH);
+  grid-template-columns: var(--CYANMARGINWIDTH) auto var(--GREYBLOCKWIDTH);
   grid-template-rows: auto auto;
 }
 #red #contactMeSection #titleArea {
   grid-area: contactMe;
-  outline: 2px solid rgb(238, 16, 16);
   padding-top: 80px;
   padding-left: 50px;
 }
@@ -870,19 +868,23 @@ nav ul li a {
   }
 }
 #red #contactMeSection .contactElement {
-  width: 160px;
+  width: 140px;
+}
+#red #contactMeSection .contactElement i {
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+#red #contactMeSection #details:nth-child(2) {
+  margin-left: 10px;
 }
 #red #contactMeSection #bl1 {
   grid-area: leftBlank;
-  outline: 2px solid rgb(238, 16, 16);
 }
 #red #contactMeSection #bl2 {
   grid-area: rightBlank;
-  outline: 2px solid rgb(238, 16, 16);
 }
 #red #contactMeSection #bl3 {
   grid-area: leftBlank2;
-  outline: 2px solid rgb(238, 16, 16);
 }
 
 #projectArea h2,

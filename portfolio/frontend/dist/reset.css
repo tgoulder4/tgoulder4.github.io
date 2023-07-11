@@ -8,3 +8,7 @@
 main {
   overflow-x: hidden;
 }
+
+html {
+  overflow-x: hidden;
+}
