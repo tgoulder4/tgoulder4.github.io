@@ -40,7 +40,7 @@ html {
 
 :root {
   --mainRevealWidth: 100%;
-  --navHeight: 50px;
+  --navHeight: 60px;
   --vlineWidth: 0.2vh;
   --hLineHeight: 0.2vh;
   --lineColour: #191919;
@@ -135,7 +135,7 @@ html {
   position: relative;
   top: calc(-1 * var(--navHeight));
   z-index: 3;
-  background: linear-gradient(white 8vh, var(--lineColour) 8vh);
+  background: linear-gradient(white calc(var(--navHeight) - 1.8px), var(--lineColour) calc(var(--navHeight) - 1.8px));
   flex-shrink: 0;
 }
 
@@ -883,6 +883,7 @@ nav ul li a {
     width: 100%;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto;
+    border-left: none;
   }
 
   #red #yellow3 .cyan2 #place1,
@@ -1170,10 +1171,6 @@ nav ul li a {
   }
 }
 
-#red #contactMeSection .contactElement {
-  width: 140px;
-}
-
 #red #contactMeSection .contactElement i {
   font-size: xx-large;
   margin-bottom: 10px;
@@ -1193,6 +1190,10 @@ nav ul li a {
 
 #red #contactMeSection #bl3 {
   grid-area: leftBlank2;
+}
+
+#projYelllo {
+  background-color: rgb(255, 208, 0) !important;
 }
 
 #projectArea h2,

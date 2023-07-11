@@ -310,6 +310,7 @@ nav {
         #place5 {
           display: none;
         }
+        border-left: none;
       }
       @media (min-width: $BPxl) {
         grid-template-areas:
@@ -547,7 +548,6 @@ nav {
       }
     }
     .contactElement {
-      width: 140px;
       i {
         font-size: xx-large;
         margin-bottom: 10px;
@@ -566,6 +566,9 @@ nav {
       grid-area: leftBlank2;
     }
   }
+}
+#projYelllo {
+  background-color: rgb(255, 208, 0) !important;
 }
 #projectArea h2,
 #aboutMeSection h2,

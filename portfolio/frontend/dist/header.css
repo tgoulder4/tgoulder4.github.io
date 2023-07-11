@@ -1,6 +1,6 @@
 :root {
   --mainRevealWidth: 100%;
-  --navHeight: 50px;
+  --navHeight: 60px;
   --vlineWidth: 0.2vh;
   --hLineHeight: 0.2vh;
   --lineColour: #191919;
@@ -83,7 +83,7 @@
   position: relative;
   top: calc(-1 * var(--navHeight));
   z-index: 3;
-  background: linear-gradient(white 8vh, var(--lineColour) 8vh);
+  background: linear-gradient(white calc(var(--navHeight) - 1.8px), var(--lineColour) calc(var(--navHeight) - 1.8px));
   flex-shrink: 0;
 }
 #rails #mainReveal #center {

@@ -641,6 +641,7 @@ nav ul li a {
     width: 100%;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto;
+    border-left: none;
   }
   #red #yellow3 .cyan2 #place1,
   #red #yellow3 .cyan2 #place3,
@@ -876,9 +877,6 @@ nav ul li a {
     height: 6vw;
   }
 }
-#red #contactMeSection .contactElement {
-  width: 140px;
-}
 #red #contactMeSection .contactElement i {
   font-size: xx-large;
   margin-bottom: 10px;
@@ -894,6 +892,10 @@ nav ul li a {
 }
 #red #contactMeSection #bl3 {
   grid-area: leftBlank2;
+}
+
+#projYelllo {
+  background-color: rgb(255, 208, 0) !important;
 }
 
 #projectArea h2,
