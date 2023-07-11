@@ -591,7 +591,7 @@ nav ul li a {
   width: 626px;
   height: 79px;
   z-index: -1;
-  background-color: var(--grey);
+  background-color: var(--lighterGrey);
 }
 @media (max-width: 1199px) {
   #red #yellow1 #cyan #purple2 h1 ::after {
@@ -630,6 +630,7 @@ nav ul li a {
   width: var(--CYANMARGINWIDTH);
   height: 100%;
   z-index: -1;
+  background-color: var(--lighterGrey);
 }
 #red #yellow3 .cyan2 {
   display: grid;
@@ -743,7 +744,7 @@ nav ul li a {
   grid-area: githubArea;
 }
 #red #yellow3 .cyan2 .githubWrapper .shortHeightWrapper {
-  background-color: var(--grey);
+  background-color: var(--lighterGrey);
   height: 100%;
 }
 #red #yellow3 .cyan2 .githubWrapper #purple5 {
@@ -782,7 +783,7 @@ nav ul li a {
   width: 43vw;
   height: 5.8vw;
   z-index: -1;
-  background-color: var(--grey);
+  background-color: var(--lighterGrey);
 }
 @media (min-width: 1199px) {
   #red #yellow4 #titleArea h2::after {
@@ -838,7 +839,15 @@ nav ul li a {
   right: 0;
   width: calc(12.5vw - var(--CYANMARGINWIDTH));
   background-color: black;
-  height: calc(68vw - var(--CYANMARGINWIDTH));
+  height: calc(76vw - var(--CYANMARGINWIDTH));
+  z-index: -1;
+}
+#red .fillerContainer .Lfiller {
+  left: 0;
+  width: 12.5vw;
+  background-color: var(--lighterGrey);
+  height: 81vw;
+  z-index: -1;
 }
 #red #contactMeSection {
   display: grid;
@@ -859,7 +868,7 @@ nav ul li a {
   width: 40vw;
   height: 4.2vw;
   z-index: -1;
-  background-color: var(--grey);
+  background-color: var(--lighterGrey);
 }
 @media (max-width: 768px) {
   #red #contactMeSection #titleArea::after {

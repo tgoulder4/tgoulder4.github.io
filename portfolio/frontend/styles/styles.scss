@@ -258,7 +258,7 @@ nav {
             @include maxw($BPmd) {
               display: none;
             }
-            background-color: var(--grey);
+            background-color: var(--lighterGrey);
           }
         }
         h2,
@@ -291,6 +291,7 @@ nav {
       width: var(--CYANMARGINWIDTH);
       height: 100%;
       z-index: -1;
+      background-color: var(--lighterGrey);
     }
   }
   #yellow3 {
@@ -400,7 +401,7 @@ nav {
       .githubWrapper {
         grid-area: githubArea;
         .shortHeightWrapper {
-          background-color: var(--grey);
+          background-color: var(--lighterGrey);
           height: 100%;
         }
         #purple5 {
@@ -446,7 +447,7 @@ nav {
           width: 43vw;
           height: 5.8vw;
           z-index: -1;
-          background-color: var(--grey);
+          background-color: var(--lighterGrey);
           @include minw($BPxl) {
             width: 33vw;
             height: 4.2vw;
@@ -507,7 +508,15 @@ nav {
       right: 0;
       width: calc(12.5vw - var(--CYANMARGINWIDTH));
       background-color: black;
-      height: calc(68vw - var(--CYANMARGINWIDTH));
+      height: calc(76vw - var(--CYANMARGINWIDTH));
+      z-index: -1;
+    }
+    .Lfiller {
+      left: 0;
+      width: calc(12.5vw);
+      background-color: var(--lighterGrey);
+      height: 81vw;
+      z-index: -1;
     }
   }
   #contactMeSection {
@@ -534,7 +543,7 @@ nav {
           height: 6vw;
         }
         z-index: -1;
-        background-color: var(--grey);
+        background-color: var(--lighterGrey);
       }
     }
     .contactElement {

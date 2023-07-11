@@ -7,6 +7,7 @@
 
 main {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 html {
@@ -18,6 +19,7 @@ html {
   --primary_colour: #191919;
   --secondary_colour: #2f2f2f;
   --grey: #f3f3f3;
+  --lighterGrey: #f0f0f0;
 }
 
 .analysis-Yellow {
@@ -820,7 +822,7 @@ nav ul li a {
   width: 626px;
   height: 79px;
   z-index: -1;
-  background-color: var(--grey);
+  background-color: var(--lighterGrey);
 }
 
 @media (max-width: 1199px) {
@@ -868,6 +870,7 @@ nav ul li a {
   width: var(--CYANMARGINWIDTH);
   height: 100%;
   z-index: -1;
+  background-color: var(--lighterGrey);
 }
 
 #red #yellow3 .cyan2 {
@@ -1008,7 +1011,7 @@ nav ul li a {
 }
 
 #red #yellow3 .cyan2 .githubWrapper .shortHeightWrapper {
-  background-color: var(--grey);
+  background-color: var(--lighterGrey);
   height: 100%;
 }
 
@@ -1055,7 +1058,7 @@ nav ul li a {
   width: 43vw;
   height: 5.8vw;
   z-index: -1;
-  background-color: var(--grey);
+  background-color: var(--lighterGrey);
 }
 
 @media (min-width: 1199px) {
@@ -1124,7 +1127,16 @@ nav ul li a {
   right: 0;
   width: calc(12.5vw - var(--CYANMARGINWIDTH));
   background-color: black;
-  height: calc(68vw - var(--CYANMARGINWIDTH));
+  height: calc(76vw - var(--CYANMARGINWIDTH));
+  z-index: -1;
+}
+
+#red .fillerContainer .Lfiller {
+  left: 0;
+  width: 12.5vw;
+  background-color: var(--lighterGrey);
+  height: 81vw;
+  z-index: -1;
 }
 
 #red #contactMeSection {
@@ -1148,7 +1160,7 @@ nav ul li a {
   width: 40vw;
   height: 4.2vw;
   z-index: -1;
-  background-color: var(--grey);
+  background-color: var(--lighterGrey);
 }
 
 @media (max-width: 768px) {
