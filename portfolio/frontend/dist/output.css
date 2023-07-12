@@ -214,6 +214,7 @@ html {
   --DIVIDER1HEIGHT: 40px;
   --CYANMARGINWIDTH: 70px;
   --GREYBLOCKWIDTH: 150px;
+  --projectCardHeight: 375px;
 }
 
 .mt-10 {
@@ -528,6 +529,7 @@ html {
   --DIVIDER1HEIGHT: 40px;
   --CYANMARGINWIDTH: 70px;
   --GREYBLOCKWIDTH: 150px;
+  --projectCardHeight: 375px;
 }
 
 #contentS2 #projectArea #projectCards {
@@ -897,7 +899,7 @@ nav ul li a {
 
 @media (min-width: 1199px) {
   #red #yellow3 .cyan2 {
-    grid-template-areas: "blank summary blank2 blank3" "projectArea projectArea githubArea blank4";
+    grid-template-areas: "blank summary blank2" "projectArea projectArea githubArea";
     grid-template-rows: auto auto;
     grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH);
   }
@@ -972,7 +974,7 @@ nav ul li a {
 }
 
 #red #yellow3 .cyan2 .purple4 .green2 .legend {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 #red #yellow3 .cyan2 .purple4 .green2 .legend p:nth-child(2) {
@@ -981,7 +983,6 @@ nav ul li a {
 
 #red #yellow3 .cyan2 .purple4 .green3 .projectCard {
   height: 44vh;
-  min-width: 32%;
 }
 
 #red #yellow3 .cyan2 .purple4 .green3 .projectCard .imgFiller {
@@ -1010,6 +1011,7 @@ nav ul li a {
 
 #red #yellow3 .cyan2 .githubWrapper {
   grid-area: githubArea;
+  height: 41%;
 }
 
 #red #yellow3 .cyan2 .githubWrapper .shortHeightWrapper {
@@ -1219,6 +1221,10 @@ nav ul li a {
   #contactMeSection h2 {
     font-size: 10vw;
   }
+}
+
+#projectCards {
+  height: var(--projectCardHeight);
 }
 
 .cyan {

@@ -314,8 +314,8 @@ nav {
       }
       @media (min-width: $BPxl) {
         grid-template-areas:
-          "blank summary blank2 blank3"
-          "projectArea projectArea githubArea blank4";
+          "blank summary blank2"
+          "projectArea projectArea githubArea";
         grid-template-rows: auto auto;
         grid-template-columns: var(--GREYBLOCKWIDTH) auto var(--GREYBLOCKWIDTH);
       }
@@ -370,13 +370,12 @@ nav {
             p:nth-child(2) {
               text-decoration: underline;
             }
-            font-size: 1.3rem;
+            font-size: 1rem;
           }
         }
         .green3 {
           .projectCard {
             height: 44vh;
-            min-width: 32%;
             .imgFiller {
               background-color: var(--grey);
               height: 100%;
@@ -401,6 +400,7 @@ nav {
       }
       .githubWrapper {
         grid-area: githubArea;
+        height: 41%;
         .shortHeightWrapper {
           background-color: var(--lighterGrey);
           height: 100%;
@@ -582,6 +582,9 @@ nav {
   @include maxw($BPmd) {
     font-size: 10vw;
   }
+}
+#projectCards {
+  height: var(--projectCardHeight);
 }
 .cyan {
   margin-left: var(--CYANMARGINWIDTH);
