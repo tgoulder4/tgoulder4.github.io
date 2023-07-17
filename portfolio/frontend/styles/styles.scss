@@ -20,12 +20,8 @@
   }
 }
 #topPart {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  position: absolute;
   left: 0;
-  width: 100%;
   animation: ssTopBlocksMoveDown cubic-bezier(0.075, 0.82, 0.165, 1) 10s
     infinite;
 }
@@ -112,7 +108,7 @@
 #leftBlock,
 #rightBlock {
   width: calc(50% - 1px);
-  height: var(--HorizBlockHeight);
+  height: 100%;
   animation: ssGap cubic-bezier(0.075, 0.82, 0.165, 1) 10s infinite;
   /*animation: ssTop cubic-bezier(0.075, 0.82, 0.165, 1) 10s infinite;*/
 }
@@ -406,12 +402,27 @@ nav {
   #yellow4 {
     #aboutMeSection {
       display: grid;
-      grid-template-areas:
-        "leftBlank aboutMe rightBlank"
-        "leftBlank areaSkillSet rightBlank"
-        "leftBlank middleBlank rightBlank";
-      grid-template-rows: auto auto auto;
-      grid-template-columns: var(--CYANMARGINWIDTH) auto var(--GREYBLOCKWIDTH);
+      @media (min-width: $BPxl) {
+        grid-template-areas:
+          "leftBlank aboutMe rightBlank"
+          "leftBlank areaSkillSet rightBlank"
+          "leftBlank middleBlank rightBlank";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: var(--CYANMARGINWIDTH) auto var(--GREYBLOCKWIDTH);
+      }
+      @media (max-width: $BPxl) {
+        grid-template-areas:
+          "aboutMe "
+          "areaSkillSet "
+          "middleBlank ";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        #bl3,
+        #bl1,
+        #abtMeLFiller {
+          display: none;
+        }
+      }
     }
     #bl1 {
       grid-area: leftBlank;
@@ -448,6 +459,18 @@ nav {
       grid-area: areaSkillSet;
       .anotherQuote {
         flex-basis: 50%;
+        @media (max-width: $BPmd) {
+          border-top: 2px solid var(--grey);
+          border-left: none;
+        }
+        @media (max-width: $BPlg) {
+          border-top: 2px solid var(--grey);
+          border-left: none;
+        }
+        @media (min-width: $BPlg) {
+          border-top: none;
+          border-left: 2px solid var(--grey);
+        }
       }
       .myEvolvingSkillset {
         flex-basis: 50%;
@@ -510,11 +533,23 @@ nav {
   }
   #contactMeSection {
     display: grid;
-    grid-template-areas:
-      "leftBlank contactMe rightBlank"
-      "leftBlank2 personalDetails rightBlank";
-    grid-template-columns: var(--CYANMARGINWIDTH) auto var(--GREYBLOCKWIDTH);
-    grid-template-rows: auto auto;
+    @media (max-width: $BPxl) {
+      grid-template-areas:
+        " contactMe "
+        " personalDetails ";
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+    }
+    @media (min-width: $BPxl) {
+      grid-template-areas:
+        "leftBlank contactMe rightBlank"
+        "leftBlank2 personalDetails rightBlank";
+      grid-template-columns: var(--CYANMARGINWIDTH) auto var(--GREYBLOCKWIDTH);
+      grid-template-rows: auto auto;
+    }
+    #details {
+      grid-area: personalDetails;
+    }
     #titleArea {
       grid-area: contactMe;
       padding-top: 80px;
@@ -560,6 +595,11 @@ nav {
 }
 #projLm {
   background-color: #38b770 !important;
+}
+@media (max-width: $BPxl) {
+  #abtMeLFiller {
+    display: none;
+  }
 }
 #projectArea h2,
 #aboutMeSection h2,

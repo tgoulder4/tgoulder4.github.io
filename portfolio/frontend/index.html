@@ -77,7 +77,10 @@
             <div id="shapeShift-container" class="flex justify-center p-[50px]">
               <!--shapeshift group-->
               <div id="shapeShift" class="h-100 relative w-[300px]">
-                <div id="topPart" class="flex justify-between">
+                <div
+                  id="topPart"
+                  class="absolute flex h-1/5 w-full justify-between"
+                >
                   <div class="block" id="leftBlock"></div>
                   <div class="block" id="rightBlock"></div>
                 </div>
@@ -134,7 +137,7 @@
     >
       <div
         id="red"
-        class="analysis analysis-Red d-flex greyBdr-left flex-column w-3/4"
+        class="analysis analysis-Red d-flex greyBdr-left greyBdr-right flex-column w-3/4"
       >
         <div
           id="lFiller1"
@@ -418,7 +421,7 @@
         <div class="filler relative goesToRight" id="secondFiller"></div>
 
         <!-- CURRENT -->
-        <div class="fillerContainer">
+        <div class="fillerContainer" id="abtMeLFiller">
           <div class="Lfiller absolute"></div>
         </div>
         <div class="fillerContainer">
@@ -492,7 +495,7 @@
                 <!-- Item -->
                 <i class="text-sm">(A-Levels)</i>
               </div>
-              <div class="anotherQuote greyBdr-left p-[50px]">
+              <div class="anotherQuote p-[50px]">
                 <i class="fa-sharp fa-solid fa-quote-left"></i>
                 <p>
                   I excel in problem-solving and attention to detail, gained
