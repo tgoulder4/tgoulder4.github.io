@@ -411,12 +411,14 @@ nav {
         grid-template-columns: var(--CYANMARGINWIDTH) auto var(--GREYBLOCKWIDTH);
       }
       @media (max-width: $BPxl) {
+        border-right: 2px solid var(--grey); //not working FOR SOME REASON >???????????????
         grid-template-areas:
           "aboutMe "
           "areaSkillSet "
           "middleBlank ";
         grid-template-rows: auto auto auto;
         grid-template-columns: auto;
+
         #bl3,
         #bl1,
         #abtMeLFiller {

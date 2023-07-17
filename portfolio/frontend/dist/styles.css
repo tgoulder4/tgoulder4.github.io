@@ -745,6 +745,7 @@ nav ul li a {
 }
 @media (max-width: 1199px) {
   #red #yellow4 #aboutMeSection {
+    border-right: 2px solid var(--grey);
     grid-template-areas: "aboutMe " "areaSkillSet " "middleBlank ";
     grid-template-rows: auto auto auto;
     grid-template-columns: auto;
