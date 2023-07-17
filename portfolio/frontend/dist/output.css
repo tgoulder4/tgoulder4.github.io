@@ -1229,6 +1229,16 @@ nav ul li a {
   background-color: rgb(255, 208, 0) !important;
 }
 
+#btnNext {
+  margin-left: none;
+}
+
+@media (min-width: 768px) {
+  #btnNext {
+    margin-left: 0.25rem;
+  }
+}
+
 #projLm {
   background-color: #38b770 !important;
 }

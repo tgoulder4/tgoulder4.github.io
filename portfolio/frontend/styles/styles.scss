@@ -593,6 +593,12 @@ nav {
 #projYelllo {
   background-color: rgb(255, 208, 0) !important;
 }
+#btnNext {
+  margin-left: none;
+  @media (min-width: $BPmd) {
+    margin-left: 0.25rem;
+  }
+}
 #projLm {
   background-color: #38b770 !important;
 }
