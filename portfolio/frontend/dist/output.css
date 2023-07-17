@@ -740,15 +740,6 @@ nav ul li a {
 
 /*main gets display flex. push center shapeshift outwards*/
 
-.leftBanner {
-  height: 100px;
-}
-
-.deskLeftBanner {
-  height: 100%;
-  margin-left: -2px;
-}
-
 .grey {
   background-color: var(--grey);
 }
@@ -761,10 +752,6 @@ nav ul li a {
   font-style: italic;
 }
 
-#red {
-  width: 75%;
-}
-
 @media (max-width: 768px) {
   #red {
     width: 90% !important;
@@ -773,14 +760,7 @@ nav ul li a {
 
 #red #lFiller1 {
   margin-top: var(--CYANMARGINWIDTH);
-  height: 155vh;
-}
-
-@media (max-width: 768px) {
-  #red #lFiller1 {
-    height: 163vh;
-    max-height: 1510px;
-  }
+  max-height: 1500px;
 }
 
 #red #yellow1 #cyan #greySocials {
@@ -987,7 +967,7 @@ nav ul li a {
 
 #red #yellow3 .cyan2 .purple4 .green3 .projectCard .imgFiller {
   background-color: var(--grey);
-  height: 100%;
+  height: 22vh;
 }
 
 #red #yellow3 .cyan2 .purple4 .green3 .projectCard summary {
@@ -1011,7 +991,6 @@ nav ul li a {
 
 #red #yellow3 .cyan2 .githubWrapper {
   grid-area: githubArea;
-  height: 41%;
 }
 
 #red #yellow3 .cyan2 .githubWrapper .shortHeightWrapper {
@@ -1199,6 +1178,10 @@ nav ul li a {
   background-color: rgb(255, 208, 0) !important;
 }
 
+#projLm {
+  background-color: #38b770 !important;
+}
+
 #projectArea h2,
 #aboutMeSection h2,
 #contactMeSection h2 {
@@ -1221,10 +1204,6 @@ nav ul li a {
   #contactMeSection h2 {
     font-size: 10vw;
   }
-}
-
-#projectCards {
-  height: var(--projectCardHeight);
 }
 
 .cyan {

@@ -134,11 +134,11 @@
     >
       <div
         id="red"
-        class="analysis analysis-Red d-flex greyBdr-left flex-column"
+        class="analysis analysis-Red d-flex greyBdr-left flex-column w-3/4"
       >
         <div
           id="lFiller1"
-          class="filler position-absolute d-none d-md-block left-0 w-7vw w-12vw-xl bg-black mt-100 goesToLeft"
+          class="filler position-absolute d-none d-md-block left-0 w-7vw w-12vw-xl bg-black mt-100 goesToLeft h-full"
           id="firstFiller"
         ></div>
         <!-- absolute, move this to the left and down, left 0-->
@@ -158,7 +158,7 @@
             <!--spans the whole height-->
 
             <div
-              class="analysis analysis-Purple deskLeftBanner minw-150px d-none d-xl-flex greyBdr-all w-var-greyblw"
+              class="analysis analysis-Purple deskLeftBanner minw-150px h-full ml-[-2px] d-none d-xl-flex greyBdr-all w-var-greyblw"
             >
               <div
                 id="greySocials"
@@ -250,7 +250,7 @@
                     class="green2 analysis analysis-Red d-flex flex-column"
                   >
                     <div class="legend d-flex justify-content-between">
-                      <p>TOP 3</p>
+                      <p>TOP</p>
                       <!-- <p>View all</p> -->
                     </div>
                     <h2>PROJECTS</h2>
@@ -273,23 +273,31 @@
                       </div>
                     </div>
                   </div>
-                  <div id="projectCards">
+                  <div
+                    id="projectCards"
+                    class="relative h-min flex flex-col gap-3"
+                  >
                     <div
                       id="projectCardContainer"
-                      class="green3 absolute analysis analysis-Red overflow-auto d-flex flex-column flex-md-row justify-content-between"
+                      class="green3 w-100 analysis analysis-Red gap-2 overflow-auto flex flex-col md:flex-row justify-content-between"
                     >
                       <div
                         class="projectCard d-flex flex-column greyBdr-all w-100"
                       >
                         <!-- <img src="" alt=""> -->
-                        <div id="projYelllo" class="imgFiller"></div>
+                        <img
+                          src="./images/manjoLogo.png"
+                          draggable="false"
+                          alt=""
+                          class="h-[22vh] object-scale-down bg-[#ddac3d]"
+                        />
                         <summary
                           class="d-flex flex-column align-items-end h-full justify-between"
                         >
                           <div class="titleDesc w-100">
-                            <h3 class="title">Yelllo</h3>
+                            <h3 class="title">Manjo</h3>
                             <p class="description">
-                              Automatic Calendar Scheduler
+                              Automatic Calendar Scehduler
                             </p>
                           </div>
                           <div class="d-flex gap-1">
@@ -305,14 +313,41 @@
                         class="projectCard d-flex flex-column greyBdr-all w-100"
                       >
                         <!-- <img src="" alt=""> -->
-                        <div id="projYelllo" class="imgFiller"></div>
+                        <div id="projYelllo" class="imgFiller h-[22vh]"></div>
+                        <summary
+                          class="d-flex flex-column align-items-end justify-between"
+                        >
+                          <div class="titleDesc w-100">
+                            <h3 class="title">Buddy</h3>
+                            <p class="description">Form friend groups</p>
+                          </div>
+                          <div class="d-flex gap-1">
+                            <div
+                              class="btn btn-info bg-zinc-700 border-black hover:bg-zinc-950"
+                            >
+                              View
+                            </div>
+                          </div>
+                        </summary>
+                      </div>
+                      <a
+                        id="btnNext"
+                        href=""
+                        class="flex w-full ml-1 h-full justify-center items-center border-[var(--grey)] border-2 md:w-1/3 text-black text-3xl font-bold bg-[#f0f0f0]"
+                      >
+                        >
+                      </a>
+                      <!-- <div
+                        class="projectCard d-flex flex-column greyBdr-all w-100"
+                      >
+                        <img src="" class="h-[22vh]" alt="" />
                         <summary
                           class="d-flex flex-column align-items-end h-full justify-between"
                         >
                           <div class="titleDesc w-100">
-                            <h3 class="title">Yelllo</h3>
+                            <h3 class="title">StationSpy</h3>
                             <p class="description">
-                              Automatic Calendar Scheduler
+                              Live train departures RESTful API
                             </p>
                           </div>
                           <div class="d-flex gap-1">
@@ -323,18 +358,19 @@
                             </div>
                           </div>
                         </summary>
-                      </div>
-                      <div
+                      </div> -->
+                      <!-- <div
                         class="projectCard w-100 d-flex flex-column greyBdr-all"
                       >
-                        <!-- <img src="" alt=""> -->
                         <div class="imgFiller"></div>
                         <summary
                           class="d-flex flex-column justify-between align-items-end h-full"
                         >
                           <div class="titleDesc w-100">
-                            <h3 class="title">HouseHop</h3>
-                            <p class="description">Find Perfect Roomates</p>
+                            <h3 class="title">Noder</h3>
+                            <p class="description">
+                              Dijkstra's Algorithm Visualiser
+                            </p>
                           </div>
                           <div class="d-flex gap-1">
                             <div
@@ -344,28 +380,7 @@
                             </div>
                           </div>
                         </summary>
-                      </div>
-                      <div
-                        class="projectCard w-100 d-flex flex-column greyBdr-all"
-                      >
-                        <!-- <img src="" alt=""> -->
-                        <div class="imgFiller"></div>
-                        <summary
-                          class="d-flex flex-column justify-between align-items-end h-full"
-                        >
-                          <div class="titleDesc w-100">
-                            <h3 class="title">Vector</h3>
-                            <p class="description">Effortless Learning</p>
-                          </div>
-                          <div class="d-flex gap-1">
-                            <div
-                              class="btn btn-info bg-zinc-700 border-black hover:bg-zinc-950"
-                            >
-                              View
-                            </div>
-                          </div>
-                        </summary>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>

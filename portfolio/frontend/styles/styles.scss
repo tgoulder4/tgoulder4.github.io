@@ -189,13 +189,6 @@ nav {
   }
 }
 /*main gets display flex. push center shapeshift outwards*/
-.leftBanner {
-  height: 100px;
-}
-.deskLeftBanner {
-  height: 100%;
-  margin-left: -2px;
-}
 .grey {
   background-color: var(--grey);
 }
@@ -207,17 +200,13 @@ nav {
 }
 
 #red {
-  width: 75%;
   @include maxw($BPmd) {
     width: 90% !important;
   }
   #lFiller1 {
     margin-top: var(--CYANMARGINWIDTH);
-    height: 155vh;
-    @include maxw($BPmd) {
-      height: 163vh;
-      max-height: 1510px;
-    }
+
+    max-height: 1500px;
   }
   #yellow1 {
     #cyan {
@@ -378,7 +367,7 @@ nav {
             height: 44vh;
             .imgFiller {
               background-color: var(--grey);
-              height: 100%;
+              height: 22vh;
             }
             summary {
               padding: 0.8rem;
@@ -400,7 +389,6 @@ nav {
       }
       .githubWrapper {
         grid-area: githubArea;
-        height: 41%;
         .shortHeightWrapper {
           background-color: var(--lighterGrey);
           height: 100%;
@@ -570,6 +558,9 @@ nav {
 #projYelllo {
   background-color: rgb(255, 208, 0) !important;
 }
+#projLm {
+  background-color: #38b770 !important;
+}
 #projectArea h2,
 #aboutMeSection h2,
 #contactMeSection h2 {
@@ -582,9 +573,6 @@ nav {
   @include maxw($BPmd) {
     font-size: 10vw;
   }
-}
-#projectCards {
-  height: var(--projectCardHeight);
 }
 .cyan {
   margin-left: var(--CYANMARGINWIDTH);
