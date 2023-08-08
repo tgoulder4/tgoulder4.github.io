@@ -6,7 +6,7 @@
 @import "../dist/header.css";
 @import "fanaticalSection.scss";
 @import "projectSection.scss";
-//media queries
+@import "./carousel.scss"; //media queries
 //end media queries
 ////////////////////////////////////////
 ///
@@ -323,6 +323,7 @@ nav {
         p {
           font-weight: 400;
           font-size: 1.3rem;
+          font-style: italic;
         }
         @include maxw($BPxl) {
           padding: 5vw !important;
