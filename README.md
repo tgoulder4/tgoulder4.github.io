@@ -1,1 +1,1 @@
-The frontend of my portfolio.
+My portfolio.
