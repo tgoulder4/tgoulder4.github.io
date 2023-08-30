@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
     <title>Title</title>
   </head>
   <body
-    class="bg-[#38B770] flex items-center justify-center w-full h-full overflow-y-hidden p-5"
+    class="bg-[#277042] flex items-center justify-center w-full h-full overflow-y-hidden p-6"
   >
     <div class="flex flex-col">
       <article class="flex flex-col items-center gap-[2.5rem]">
@@ -15,12 +20,14 @@
           class="w-[30%] min-w-[270px] flex flex-col justify-center items-center"
         >
           <img
-            class="w-[30%] flex flex-col"
+            class="flex flex-col mb-[-20px]"
             src="./assets/graduation-cap.png"
             alt=""
           />
           <div class="">
-            <h1 class="text-[5vw] sm:text-lg font-bold text-white">
+            <h1
+              class="text-lg sm:text-[5vw] font-bold font-mulish text-white leading-normal mb-[-10px]"
+            >
               Learnmate
             </h1>
             <h2 class="text-white mb-4 text-center">
@@ -31,19 +38,16 @@
           <div class="flex gap-2 justify-between">
             <a
               class="whitespace-nowrap py-2 px-4 rounded-md text-black bg-white hover:bg-gray-100 border-2 border-gray-200"
-              target="_blank"
-              href="https://tgoulder4.github.io/projects/Learnmate/documentation"
+              href="https://tgoulder4.github.io/projects/learnmate/documentation"
               >Tutorial</a
             >
             <a
               class="whitespace-nowrap py-2 px-4 rounded-md text-black bg-white hover:bg-gray-100 border-2 border-gray-200"
-              target="_blank"
               href="https://cdn.discordapp.com/attachments/919288529379549195/1146514285581844531/LearnMate_Documentation.docx"
               >UI/UX writeup</a
             >
             <a
               class="flex justify-center items-center gap-2 whitespace-nowrap py-2 px-4 rounded-md text-white bg-black hover:bg-gray-900 border-2 border-gray-800"
-              target="_blank"
               href="https://github.com/tgoulder4/Learnmate/tree/main/LearnMate-App-Prototype"
             >
               <svg
@@ -64,6 +68,12 @@
               GitHub</a
             >
           </div>
+          <span class="text-white font-bold mt-4"
+            >Another project by
+            <a href="http://tgoulder4.github.io" target="_blank"
+              >Tye 🌻</a
+            ></span
+          >
         </div>
         <div class="visual w-[75vw]">
           <img src="./assets/learnmateVisual.png" alt="" />

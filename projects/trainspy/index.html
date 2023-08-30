@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+
+    <script>
+      hljs.highlightAll();
+    </script>
+    <title>Trainspy</title>
+  </head>
+  <body
+    class="bg-[#1c2745] flex items-center justify-center w-full h-full overflow-y-auto p-[4.25rem]"
+  >
+    <div class="flex flex-col">
+      <article class="flex flex-col items-center gap-[2.5rem]">
+        <div
+          class="w-[30%] min-w-[270px] flex flex-col justify-center items-center"
+        >
+          <!--TOP IMAGE-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width: inherit"
+            viewBox="0 0 448 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+              svg {
+                fill: #ffffff;
+              }
+            </style>
+            <path
+              d="M96 0C43 0 0 43 0 96V352c0 48 35.2 87.7 81.1 94.9l-46 46C28.1 499.9 33.1 512 43 512H82.7c8.5 0 16.6-3.4 22.6-9.4L160 448H288l54.6 54.6c6 6 14.1 9.4 22.6 9.4H405c10 0 15-12.1 7.9-19.1l-46-46c46-7.1 81.1-46.9 81.1-94.9V96c0-53-43-96-96-96H96zM64 96c0-17.7 14.3-32 32-32H352c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96zM224 288a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+            />
+          </svg>
+          <div class="">
+            <h1
+              class="text-lg sm:text-[7vw] font-bold font-vt text-white leading-normal mb-[-10px]"
+            >
+              trainspy
+            </h1>
+            <h2 class="text-white mb-4 text-center">
+              Get instant real-time updates on trains throughout their journey
+              and find departures at any UK station.
+            </h2>
+          </div>
+
+          <div class="flex gap-2 justify-between">
+            <a
+              class="flex justify-center items-center gap-2 whitespace-nowrap py-2 px-4 rounded-md text-white bg-red-700 hover:bg-red-800 border-2 border-red-500"
+              href="https://www.npmjs.com/package/trainspy"
+              target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 576 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #ffffff;
+                  }
+                </style>
+                <path
+                  d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"
+                /></svg
+              >NPM</a
+            >
+            <a
+              class="flex justify-center items-center gap-2 whitespace-nowrap py-2 px-4 rounded-md text-white bg-black hover:bg-gray-900 border-2 border-gray-800"
+              href="https://github.com/tgoulder4/trainspy"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 496 512"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #ffffff;
+                  }
+                </style>
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                />
+              </svg>
+              GitHub</a
+            >
+          </div>
+          <span class="text-white font-bold mt-4"
+            >Another project by
+            <a href="http://tgoulder4.github.io" target="_blank"
+              >Tye 🌻</a
+            ></span
+          >
+        </div>
+        <div class="visual w-[65vw]">
+          <pre class="bg-gray-700 rounded-lg">
+            <code class="language-javascript">
+              //trackTrain("P70052")
+              {
+                status: 'At platform',
+                station: {
+                  name: 'Smethwick Rolfe Street',
+                  code: 'SMR',
+                  location: { latitude: 52.4963984863, longitude: -1.9706383988 },
+                  platform: '2',
+                  stopsHere: true,
+                  delay: 0,
+                  arrival: { actual: '2146¾', scheduled: '2146½' },
+                  departure: { actual: null, scheduled: '2147' }
+                },
+                callingPoints: [
+                {
+                  name: 'Sandwell & Dudley',
+                  code: 'SAD',
+                  location: { latitude: 52.508672806, longitude: -2.0115900516 },
+                  platform: '2',
+                  stopsHere: true,
+                  delay: 0,
+                  arrival: { actual: null, scheduled: '2152' },
+                  departure: { actual: null, scheduled: '2153' }
+                },
+                  ...
+                ]
+              }
+
+              
+              //findTrains('WLF')
+              
+              {
+                name: 'Whittlesford Parkway',
+                code: 'WLF',
+                location: { latitude: 52.1035981209, longitude: 0.1656457011 },
+                departures: [
+                  {
+                    serviceID: 'L13825',
+                    destination: 'Norwich',
+                    arrival: { actual: '2109', scheduled: '2109' },
+                    departure: { actual: '2109¼', scheduled: '2109' },
+                    platform: '2',
+                    stopsHere: true,
+                    state: {
+                      status: 'Passed',
+                      station: {
+                        name: 'Waterbeach',
+                        code: 'WBC',
+                        location: { latitude: 52.2623177182, longitude: 0.1968191721 },
+                        platform: '2',
+                        stopsHere: false,
+                        delay: 0,
+                        arrival: { actual: null, scheduled: null },
+                        departure: { actual: '2127½', scheduled: '2128' }
+                      }
+                    }
+                  },
+                  ...]
+              }
+            </code>
+            
+          </pre>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
