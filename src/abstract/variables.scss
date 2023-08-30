@@ -1,6 +1,6 @@
 :root {
   --mainRevealWidth: 100%;
-  --navHeight: 50px;
+  --navHeight: 60px;
   --vlineWidth: 0.2vh;
   --hLineHeight: 0.2vh;
   --lineColour: #191919;
@@ -14,21 +14,9 @@
   --DIVIDER1HEIGHT: 40px;
   --CYANMARGINWIDTH: 70px;
   --GREYBLOCKWIDTH: 150px;
+  --projectCardHeight: 375px;
 }
-
-#contentS2 #projectArea #projectCards {
-  row-gap: 4px;
-  -moz-column-gap: 4px;
-       column-gap: 4px;
-}
-#contentS2 #projectArea #projectCards .secondAndThirdProjectContainer {
-  width: 100%;
-  -moz-column-gap: 4px;
-       column-gap: 4px;
-}
-@media (min-width: 768px) {
-  #contentS2 #projectArea #projectCards .secondAndThirdProjectContainer {
-    -moz-column-gap: 4px;
-         column-gap: 4px;
-  }
-}
+$BPmd: 768px;
+$BPlg: 991px;
+$BPxl: 1199px;
+$projectCardSeparation: 4px;

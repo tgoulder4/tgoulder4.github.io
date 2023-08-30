@@ -1,12 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./frontend/*.{html,js}"],
+export default {
+  content: [],
   theme: {
-    screens: {
-      md: "768px",
-      xl: "1199px",
-    },
     extend: {},
   },
   plugins: [],
-};
+}
+
