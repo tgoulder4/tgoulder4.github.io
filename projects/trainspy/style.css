@@ -1985,9 +1985,24 @@ video {
   font-family: VT323, monospace;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-\[70vw\] {
+  font-size: 70vw;
+}
+
+.text-\[7vw\] {
+  font-size: 7vw;
+}
+
+.text-\[70pt\] {
+  font-size: 70pt;
+}
+
+.text-\[120pt\] {
+  font-size: 120pt;
+}
+
+.text-\[50pt\] {
+  font-size: 50pt;
 }
 
 .font-bold {
@@ -2468,6 +2483,18 @@ video {
 @media (min-width: 640px) {
   .sm\:text-\[7vw\] {
     font-size: 7vw;
+  }
+
+  .sm\:text-\[90pt\] {
+    font-size: 90pt;
+  }
+
+  .sm\:text-\[80pt\] {
+    font-size: 80pt;
+  }
+
+  .sm\:text-\[70pt\] {
+    font-size: 70pt;
   }
 
   .sm\:underline {
